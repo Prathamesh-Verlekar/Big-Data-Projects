@@ -78,7 +78,9 @@ sudo apt install default-jdk
 - Download Apache Kafka from [here](https://kafka.apache.org/downloads)
 
 -Install the required pyhton libraries
-`pip3 install kafka-python`
+```
+pip3 install kafka-python
+```
 
 
 #### Starting Zookeeper & Kafka Broker
