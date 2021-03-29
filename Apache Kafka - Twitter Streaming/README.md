@@ -89,13 +89,13 @@ Additionally, start the **Kafka broker** by running:
 bin/kafka-server-start.sh config/server.properties
 ```
 
-#### Using `producer.py`
+#### Use `producer.py`
 Run the script **producer.py** for generating sample events
 
-#### Using `consumer.py`
+#### Use `consumer.py`
 Run the script **consumer.py** to consume the events published by the producer.
 
-#### Using `twitter-stream.py`
+#### Use `twitter-stream.py`
 Then use the **twitter-stream.py** script to  fetch tweets from Twitter's API in real-time.
 
 #### We will have to create a twitter developer account, then create a new project on the dev console and finally generate you API keys and bearer tokens
