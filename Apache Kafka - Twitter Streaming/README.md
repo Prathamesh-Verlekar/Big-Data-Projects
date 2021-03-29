@@ -8,14 +8,6 @@ https://codelabs-preview.appspot.com/?file_id=1-1_vZ54uSCF_dE2xiKPFE62VAvNE0f5cv
 
 **Apache Kafka** is a streaming message platform. It is a publish-subscribe based durable messaging system. Kafka is designed to be high performance, highly available, and redundant. It is used to collect, process, store, and integrate data at scale. A messaging system sends messages between processes, applications, and servers. 
 
-Use cases for Apache Kafka:
-➢	Stream Processing
-➢	Messaging
-➢	Website Activity Tracking
-➢	Log aggregation
-➢	Event Sourcing
-➢	Application health monitoring
-
 
 These are four main parts in a Kafka system:
 
