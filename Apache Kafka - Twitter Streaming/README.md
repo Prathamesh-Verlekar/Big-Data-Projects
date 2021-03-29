@@ -1,7 +1,7 @@
 Apache Kafka
 
 #### CLAAT Link
-https://codelabs-preview.appspot.com/?file_id=
+https://codelabs-preview.appspot.com/?file_id=1-1_vZ54uSCF_dE2xiKPFE62VAvNE0f5cvrCtuF4NYIU#0
 
 ## Apache Kafka
 
