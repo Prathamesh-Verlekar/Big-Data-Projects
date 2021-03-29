@@ -32,11 +32,15 @@ These are four main parts in a Kafka system:
 
 2. Installing **Ubuntu** Guest Edition
 
-`sudo apt install build-essential dkms linux-headers-$(uname -r)`
+```
+sudo apt install build-essential dkms linux-headers-$(uname -r)
+```
 
 3. Installing Python on the Virtual VM
 
-`sudo apt install python3`
+```
+sudo apt install python3`
+```
 
 4. Installing AWS CLI
 
@@ -54,8 +58,9 @@ sudo ./aws/install
 ```
 
 5. Connecting with AWS
-
-` aws configure`
+```
+aws configure
+```
 
 6. Installing Java jdk
 
