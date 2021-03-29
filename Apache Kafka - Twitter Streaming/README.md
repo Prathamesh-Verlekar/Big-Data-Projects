@@ -1,7 +1,10 @@
 ## Apache Kafka
 
+
 #### CLAAT Link
 https://codelabs-preview.appspot.com/?file_id=1-1_vZ54uSCF_dE2xiKPFE62VAvNE0f5cvrCtuF4NYIU#0
+
+
 
 **Apache Kafka** is a streaming message platform. It is a publish-subscribe based durable messaging system. Kafka is designed to be high performance, highly available, and redundant. It is used to collect, process, store, and integrate data at scale. A messaging system sends messages between processes, applications, and servers. 
 
