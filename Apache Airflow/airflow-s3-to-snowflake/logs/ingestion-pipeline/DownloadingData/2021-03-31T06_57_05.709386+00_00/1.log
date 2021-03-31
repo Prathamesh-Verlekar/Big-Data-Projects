@@ -1,0 +1,25 @@
+[2021-03-31 03:00:12,317] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: ingestion-pipeline.DownloadingData 2021-03-31T06:57:05.709386+00:00 [queued]>
+[2021-03-31 03:00:12,340] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: ingestion-pipeline.DownloadingData 2021-03-31T06:57:05.709386+00:00 [queued]>
+[2021-03-31 03:00:12,340] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-31 03:00:12,340] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2021-03-31 03:00:12,340] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-31 03:00:12,366] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): DownloadingData> on 2021-03-31T06:57:05.709386+00:00
+[2021-03-31 03:00:12,371] {standard_task_runner.py:52} INFO - Started process 15757 to run task
+[2021-03-31 03:00:12,390] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'ingestion-pipeline', 'DownloadingData', '2021-03-31T06:57:05.709386+00:00', '--job-id', '8', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/ingestion.py', '--cfg-path', '/tmp/tmp9e_2bq8j', '--error-file', '/tmp/tmp1nhk16gp']
+[2021-03-31 03:00:12,390] {standard_task_runner.py:77} INFO - Job 8: Subtask DownloadingData
+[2021-03-31 03:00:12,444] {logging_mixin.py:104} INFO - Running <TaskInstance: ingestion-pipeline.DownloadingData 2021-03-31T06:57:05.709386+00:00 [running]> on host prathamesh-VirtualBox
+[2021-03-31 03:00:12,479] {taskinstance.py:1255} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=ingestion-pipeline
+AIRFLOW_CTX_TASK_ID=DownloadingData
+AIRFLOW_CTX_EXECUTION_DATE=2021-03-31T06:57:05.709386+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-03-31T06:57:05.709386+00:00
+[2021-03-31 03:00:12,522] {credentials.py:1222} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2021-03-31 03:00:12,815] {logging_mixin.py:104} INFO - Downloading file netflix_titles.csv..
+[2021-03-31 03:00:13,212] {logging_mixin.py:104} INFO - Download Complete!
+[2021-03-31 03:00:13,214] {python.py:118} INFO - Done. Returned value was: None
+[2021-03-31 03:00:13,217] {taskinstance.py:1159} INFO - Marking task as SUCCESS. dag_id=ingestion-pipeline, task_id=DownloadingData, execution_date=20210331T065705, start_date=20210331T070012, end_date=20210331T070013
+[2021-03-31 03:00:13,272] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-03-31 03:00:13,315] {local_task_job.py:146} INFO - Task exited with return code 0

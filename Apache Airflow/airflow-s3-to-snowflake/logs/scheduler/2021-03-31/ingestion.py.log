@@ -1,0 +1,1188 @@
+[2021-03-31 01:48:26,253] {scheduler_job.py:182} INFO - Started process (PID=12560) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:48:26,271] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 01:48:26,277] {logging_mixin.py:104} INFO - [2021-03-31 01:48:26,276] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:48:29,912] {logging_mixin.py:104} INFO - [2021-03-31 01:48:29,912] {credentials.py:1222} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2021-03-31 01:48:34,027] {logging_mixin.py:104} INFO - Upload Complete!
+[2021-03-31 01:48:34,709] {logging_mixin.py:104} INFO - Downloading file netflix_titles.csv..
+[2021-03-31 01:48:35,132] {logging_mixin.py:104} INFO - [2021-03-31 01:48:35,128] {dagbag.py:305} ERROR - Failed to import: /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+Traceback (most recent call last):
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py", line 71, in <module>
+    download_data()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py", line 68, in download_data
+    bucket_name.download_file(s3_object.key, path+filename)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/inject.py", line 244, in bucket_download_file
+    return self.meta.client.download_file(
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/inject.py", line 170, in download_file
+    return transfer.download_file(
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/transfer.py", line 307, in download_file
+    future.result()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/futures.py", line 106, in result
+    return self._coordinator.result()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/futures.py", line 265, in result
+    raise self._exception
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/tasks.py", line 126, in __call__
+    return self._execute_main(kwargs)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/tasks.py", line 150, in _execute_main
+    return_value = self._main(**kwargs)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/download.py", line 571, in _main
+    fileobj.seek(offset)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 367, in seek
+    self._open_if_needed()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 350, in _open_if_needed
+    self._fileobj = self._open_function(self._filename, self._mode)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 261, in open
+    return open(filename, mode)
+FileNotFoundError: [Errno 2] No such file or directory: './data/netflix_titles.csv.0945Cbd9'
+[2021-03-31 01:48:35,134] {scheduler_job.py:641} WARNING - No viable dags retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:48:35,210] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 8.999 seconds
+[2021-03-31 01:49:06,813] {scheduler_job.py:182} INFO - Started process (PID=12626) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:49:06,815] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 01:49:06,816] {logging_mixin.py:104} INFO - [2021-03-31 01:49:06,816] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:49:07,526] {logging_mixin.py:104} INFO - [2021-03-31 01:49:07,525] {credentials.py:1222} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2021-03-31 01:49:08,578] {logging_mixin.py:104} INFO - Upload Complete!
+[2021-03-31 01:49:08,884] {logging_mixin.py:104} INFO - Downloading file netflix_titles.csv..
+[2021-03-31 01:49:09,199] {logging_mixin.py:104} INFO - [2021-03-31 01:49:09,196] {dagbag.py:305} ERROR - Failed to import: /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+Traceback (most recent call last):
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py", line 71, in <module>
+    download_data()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py", line 68, in download_data
+    bucket_name.download_file(s3_object.key, path+filename)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/inject.py", line 244, in bucket_download_file
+    return self.meta.client.download_file(
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/inject.py", line 170, in download_file
+    return transfer.download_file(
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/transfer.py", line 307, in download_file
+    future.result()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/futures.py", line 106, in result
+    return self._coordinator.result()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/futures.py", line 265, in result
+    raise self._exception
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/tasks.py", line 126, in __call__
+    return self._execute_main(kwargs)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/tasks.py", line 150, in _execute_main
+    return_value = self._main(**kwargs)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/download.py", line 571, in _main
+    fileobj.seek(offset)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 367, in seek
+    self._open_if_needed()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 350, in _open_if_needed
+    self._fileobj = self._open_function(self._filename, self._mode)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 261, in open
+    return open(filename, mode)
+FileNotFoundError: [Errno 2] No such file or directory: './data/netflix_titles.csv.8df9ffb1'
+[2021-03-31 01:49:09,213] {scheduler_job.py:641} WARNING - No viable dags retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:49:09,277] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 2.467 seconds
+[2021-03-31 01:49:41,288] {scheduler_job.py:182} INFO - Started process (PID=12660) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:49:41,289] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 01:49:41,290] {logging_mixin.py:104} INFO - [2021-03-31 01:49:41,290] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:49:42,063] {logging_mixin.py:104} INFO - [2021-03-31 01:49:42,062] {credentials.py:1222} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2021-03-31 01:49:44,353] {logging_mixin.py:104} INFO - Upload Complete!
+[2021-03-31 01:49:44,670] {logging_mixin.py:104} INFO - Downloading file netflix_titles.csv..
+[2021-03-31 01:49:45,038] {logging_mixin.py:104} INFO - [2021-03-31 01:49:45,036] {dagbag.py:305} ERROR - Failed to import: /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+Traceback (most recent call last):
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py", line 71, in <module>
+    download_data()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py", line 68, in download_data
+    bucket_name.download_file(s3_object.key, path+filename)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/inject.py", line 244, in bucket_download_file
+    return self.meta.client.download_file(
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/inject.py", line 170, in download_file
+    return transfer.download_file(
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/transfer.py", line 307, in download_file
+    future.result()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/futures.py", line 106, in result
+    return self._coordinator.result()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/futures.py", line 265, in result
+    raise self._exception
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/tasks.py", line 126, in __call__
+    return self._execute_main(kwargs)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/tasks.py", line 150, in _execute_main
+    return_value = self._main(**kwargs)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/download.py", line 571, in _main
+    fileobj.seek(offset)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 367, in seek
+    self._open_if_needed()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 350, in _open_if_needed
+    self._fileobj = self._open_function(self._filename, self._mode)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 261, in open
+    return open(filename, mode)
+FileNotFoundError: [Errno 2] No such file or directory: './data/netflix_titles.csv.AD94678e'
+[2021-03-31 01:49:45,041] {scheduler_job.py:641} WARNING - No viable dags retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:49:45,106] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 3.823 seconds
+[2021-03-31 01:50:15,440] {scheduler_job.py:182} INFO - Started process (PID=12694) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:50:15,443] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 01:50:15,447] {logging_mixin.py:104} INFO - [2021-03-31 01:50:15,447] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:50:19,386] {logging_mixin.py:104} INFO - [2021-03-31 01:50:19,386] {credentials.py:1222} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2021-03-31 01:50:21,615] {logging_mixin.py:104} INFO - Upload Complete!
+[2021-03-31 01:50:22,100] {logging_mixin.py:104} INFO - Downloading file netflix_titles.csv..
+[2021-03-31 01:50:22,395] {logging_mixin.py:104} INFO - [2021-03-31 01:50:22,393] {dagbag.py:305} ERROR - Failed to import: /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+Traceback (most recent call last):
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py", line 71, in <module>
+    download_data()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py", line 68, in download_data
+    bucket_name.download_file(s3_object.key, path+filename)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/inject.py", line 244, in bucket_download_file
+    return self.meta.client.download_file(
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/inject.py", line 170, in download_file
+    return transfer.download_file(
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/transfer.py", line 307, in download_file
+    future.result()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/futures.py", line 106, in result
+    return self._coordinator.result()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/futures.py", line 265, in result
+    raise self._exception
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/tasks.py", line 126, in __call__
+    return self._execute_main(kwargs)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/tasks.py", line 150, in _execute_main
+    return_value = self._main(**kwargs)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/download.py", line 571, in _main
+    fileobj.seek(offset)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 367, in seek
+    self._open_if_needed()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 350, in _open_if_needed
+    self._fileobj = self._open_function(self._filename, self._mode)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 261, in open
+    return open(filename, mode)
+FileNotFoundError: [Errno 2] No such file or directory: './data/netflix_titles.csv.4Fd299DE'
+[2021-03-31 01:50:22,396] {scheduler_job.py:641} WARNING - No viable dags retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:50:22,416] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 7.016 seconds
+[2021-03-31 01:50:52,914] {scheduler_job.py:182} INFO - Started process (PID=12739) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:50:52,915] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 01:50:52,916] {logging_mixin.py:104} INFO - [2021-03-31 01:50:52,915] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:50:54,159] {logging_mixin.py:104} INFO - [2021-03-31 01:50:54,159] {credentials.py:1222} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2021-03-31 01:50:55,243] {logging_mixin.py:104} INFO - Upload Complete!
+[2021-03-31 01:50:55,488] {logging_mixin.py:104} INFO - Downloading file netflix_titles.csv..
+[2021-03-31 01:50:55,734] {logging_mixin.py:104} INFO - [2021-03-31 01:50:55,731] {dagbag.py:305} ERROR - Failed to import: /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+Traceback (most recent call last):
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py", line 71, in <module>
+    download_data()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py", line 68, in download_data
+    bucket_name.download_file(s3_object.key, path+filename)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/inject.py", line 244, in bucket_download_file
+    return self.meta.client.download_file(
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/inject.py", line 170, in download_file
+    return transfer.download_file(
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/transfer.py", line 307, in download_file
+    future.result()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/futures.py", line 106, in result
+    return self._coordinator.result()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/futures.py", line 265, in result
+    raise self._exception
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/tasks.py", line 126, in __call__
+    return self._execute_main(kwargs)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/tasks.py", line 150, in _execute_main
+    return_value = self._main(**kwargs)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/download.py", line 571, in _main
+    fileobj.seek(offset)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 367, in seek
+    self._open_if_needed()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 350, in _open_if_needed
+    self._fileobj = self._open_function(self._filename, self._mode)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 261, in open
+    return open(filename, mode)
+FileNotFoundError: [Errno 2] No such file or directory: './data/netflix_titles.csv.5aDAAE0c'
+[2021-03-31 01:50:55,760] {scheduler_job.py:641} WARNING - No viable dags retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:50:55,809] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 2.910 seconds
+[2021-03-31 01:53:01,666] {scheduler_job.py:182} INFO - Started process (PID=12790) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:53:01,667] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 01:53:01,668] {logging_mixin.py:104} INFO - [2021-03-31 01:53:01,668] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:53:04,534] {logging_mixin.py:104} INFO - [2021-03-31 01:53:04,534] {credentials.py:1222} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2021-03-31 01:53:08,386] {logging_mixin.py:104} INFO - Upload Complete!
+[2021-03-31 01:53:08,799] {logging_mixin.py:104} INFO - Downloading file netflix_titles.csv..
+[2021-03-31 01:53:09,085] {logging_mixin.py:104} INFO - [2021-03-31 01:53:09,083] {dagbag.py:305} ERROR - Failed to import: /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+Traceback (most recent call last):
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py", line 71, in <module>
+    download_data()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py", line 68, in download_data
+    bucket_name.download_file(s3_object.key, path+filename)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/inject.py", line 244, in bucket_download_file
+    return self.meta.client.download_file(
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/inject.py", line 170, in download_file
+    return transfer.download_file(
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/transfer.py", line 307, in download_file
+    future.result()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/futures.py", line 106, in result
+    return self._coordinator.result()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/futures.py", line 265, in result
+    raise self._exception
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/tasks.py", line 126, in __call__
+    return self._execute_main(kwargs)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/tasks.py", line 150, in _execute_main
+    return_value = self._main(**kwargs)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/download.py", line 571, in _main
+    fileobj.seek(offset)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 367, in seek
+    self._open_if_needed()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 350, in _open_if_needed
+    self._fileobj = self._open_function(self._filename, self._mode)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 261, in open
+    return open(filename, mode)
+FileNotFoundError: [Errno 2] No such file or directory: './data/netflix_titles.csv.36bf0d8E'
+[2021-03-31 01:53:09,090] {scheduler_job.py:641} WARNING - No viable dags retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:53:09,164] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 7.546 seconds
+[2021-03-31 01:53:40,208] {scheduler_job.py:182} INFO - Started process (PID=12830) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:53:40,210] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 01:53:40,212] {logging_mixin.py:104} INFO - [2021-03-31 01:53:40,212] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:53:45,320] {logging_mixin.py:104} INFO - [2021-03-31 01:53:45,320] {credentials.py:1222} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2021-03-31 01:53:46,612] {logging_mixin.py:104} INFO - Upload Complete!
+[2021-03-31 01:53:46,972] {logging_mixin.py:104} INFO - Downloading file netflix_titles.csv..
+[2021-03-31 01:53:47,237] {logging_mixin.py:104} INFO - [2021-03-31 01:53:47,233] {dagbag.py:305} ERROR - Failed to import: /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+Traceback (most recent call last):
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py", line 71, in <module>
+    download_data()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py", line 68, in download_data
+    bucket_name.download_file(s3_object.key, path+filename)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/inject.py", line 244, in bucket_download_file
+    return self.meta.client.download_file(
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/inject.py", line 170, in download_file
+    return transfer.download_file(
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/transfer.py", line 307, in download_file
+    future.result()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/futures.py", line 106, in result
+    return self._coordinator.result()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/futures.py", line 265, in result
+    raise self._exception
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/tasks.py", line 126, in __call__
+    return self._execute_main(kwargs)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/tasks.py", line 150, in _execute_main
+    return_value = self._main(**kwargs)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/download.py", line 571, in _main
+    fileobj.seek(offset)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 367, in seek
+    self._open_if_needed()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 350, in _open_if_needed
+    self._fileobj = self._open_function(self._filename, self._mode)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 261, in open
+    return open(filename, mode)
+FileNotFoundError: [Errno 2] No such file or directory: './data/netflix_titles.csv.6Cb985C8'
+[2021-03-31 01:53:47,255] {scheduler_job.py:641} WARNING - No viable dags retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:53:47,333] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 7.129 seconds
+[2021-03-31 01:54:22,064] {scheduler_job.py:182} INFO - Started process (PID=12888) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:54:22,089] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 01:54:22,090] {logging_mixin.py:104} INFO - [2021-03-31 01:54:22,090] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:54:23,380] {logging_mixin.py:104} INFO - [2021-03-31 01:54:23,380] {credentials.py:1222} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2021-03-31 01:54:24,409] {logging_mixin.py:104} INFO - Upload Complete!
+[2021-03-31 01:54:24,704] {logging_mixin.py:104} INFO - Downloading file netflix_titles.csv..
+[2021-03-31 01:54:24,910] {logging_mixin.py:104} INFO - [2021-03-31 01:54:24,909] {dagbag.py:305} ERROR - Failed to import: /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+Traceback (most recent call last):
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py", line 71, in <module>
+    download_data()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py", line 68, in download_data
+    bucket_name.download_file(s3_object.key, path+filename)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/inject.py", line 244, in bucket_download_file
+    return self.meta.client.download_file(
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/inject.py", line 170, in download_file
+    return transfer.download_file(
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/transfer.py", line 307, in download_file
+    future.result()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/futures.py", line 106, in result
+    return self._coordinator.result()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/futures.py", line 265, in result
+    raise self._exception
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/tasks.py", line 126, in __call__
+    return self._execute_main(kwargs)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/tasks.py", line 150, in _execute_main
+    return_value = self._main(**kwargs)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/download.py", line 571, in _main
+    fileobj.seek(offset)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 367, in seek
+    self._open_if_needed()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 350, in _open_if_needed
+    self._fileobj = self._open_function(self._filename, self._mode)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 261, in open
+    return open(filename, mode)
+FileNotFoundError: [Errno 2] No such file or directory: './data/netflix_titles.csv.c3ABeDB9'
+[2021-03-31 01:54:24,913] {scheduler_job.py:641} WARNING - No viable dags retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:54:24,930] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 2.870 seconds
+[2021-03-31 01:55:06,020] {scheduler_job.py:182} INFO - Started process (PID=12931) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:55:06,060] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 01:55:06,061] {logging_mixin.py:104} INFO - [2021-03-31 01:55:06,061] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:55:09,093] {logging_mixin.py:104} INFO - [2021-03-31 01:55:09,093] {credentials.py:1222} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2021-03-31 01:55:10,168] {logging_mixin.py:104} INFO - Upload Complete!
+[2021-03-31 01:55:10,562] {logging_mixin.py:104} INFO - Downloading file netflix_titles.csv..
+[2021-03-31 01:55:10,821] {logging_mixin.py:104} INFO - [2021-03-31 01:55:10,820] {dagbag.py:305} ERROR - Failed to import: /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+Traceback (most recent call last):
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py", line 71, in <module>
+    download_data()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py", line 68, in download_data
+    bucket_name.download_file(s3_object.key, path+filename)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/inject.py", line 244, in bucket_download_file
+    return self.meta.client.download_file(
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/inject.py", line 170, in download_file
+    return transfer.download_file(
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/transfer.py", line 307, in download_file
+    future.result()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/futures.py", line 106, in result
+    return self._coordinator.result()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/futures.py", line 265, in result
+    raise self._exception
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/tasks.py", line 126, in __call__
+    return self._execute_main(kwargs)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/tasks.py", line 150, in _execute_main
+    return_value = self._main(**kwargs)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/download.py", line 571, in _main
+    fileobj.seek(offset)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 367, in seek
+    self._open_if_needed()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 350, in _open_if_needed
+    self._fileobj = self._open_function(self._filename, self._mode)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 261, in open
+    return open(filename, mode)
+FileNotFoundError: [Errno 2] No such file or directory: './data/netflix_titles.csv.8D4aafBd'
+[2021-03-31 01:55:10,822] {scheduler_job.py:641} WARNING - No viable dags retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:55:10,839] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 4.853 seconds
+[2021-03-31 01:55:50,101] {scheduler_job.py:182} INFO - Started process (PID=13004) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:55:50,119] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 01:55:50,120] {logging_mixin.py:104} INFO - [2021-03-31 01:55:50,120] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:55:52,174] {logging_mixin.py:104} INFO - [2021-03-31 01:55:52,174] {credentials.py:1222} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2021-03-31 01:55:55,216] {logging_mixin.py:104} INFO - Upload Complete!
+[2021-03-31 01:55:55,483] {logging_mixin.py:104} INFO - Downloading file netflix_titles.csv..
+[2021-03-31 01:55:55,765] {logging_mixin.py:104} INFO - [2021-03-31 01:55:55,763] {dagbag.py:305} ERROR - Failed to import: /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+Traceback (most recent call last):
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py", line 71, in <module>
+    download_data()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py", line 68, in download_data
+    bucket_name.download_file(s3_object.key, path+filename)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/inject.py", line 244, in bucket_download_file
+    return self.meta.client.download_file(
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/inject.py", line 170, in download_file
+    return transfer.download_file(
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/transfer.py", line 307, in download_file
+    future.result()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/futures.py", line 106, in result
+    return self._coordinator.result()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/futures.py", line 265, in result
+    raise self._exception
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/tasks.py", line 126, in __call__
+    return self._execute_main(kwargs)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/tasks.py", line 150, in _execute_main
+    return_value = self._main(**kwargs)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/download.py", line 571, in _main
+    fileobj.seek(offset)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 367, in seek
+    self._open_if_needed()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 350, in _open_if_needed
+    self._fileobj = self._open_function(self._filename, self._mode)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 261, in open
+    return open(filename, mode)
+FileNotFoundError: [Errno 2] No such file or directory: './data/netflix_titles.csv.fAF721aD'
+[2021-03-31 01:55:55,765] {scheduler_job.py:641} WARNING - No viable dags retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:55:55,850] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 5.770 seconds
+[2021-03-31 01:56:32,244] {scheduler_job.py:182} INFO - Started process (PID=13055) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:56:32,245] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 01:56:32,246] {logging_mixin.py:104} INFO - [2021-03-31 01:56:32,246] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:56:34,543] {logging_mixin.py:104} INFO - [2021-03-31 01:56:34,543] {credentials.py:1222} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2021-03-31 01:56:35,655] {logging_mixin.py:104} INFO - Upload Complete!
+[2021-03-31 01:56:35,909] {logging_mixin.py:104} INFO - Downloading file netflix_titles.csv..
+[2021-03-31 01:56:36,143] {logging_mixin.py:104} INFO - [2021-03-31 01:56:36,142] {dagbag.py:305} ERROR - Failed to import: /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+Traceback (most recent call last):
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py", line 71, in <module>
+    download_data()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py", line 68, in download_data
+    bucket_name.download_file(s3_object.key, path+filename)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/inject.py", line 244, in bucket_download_file
+    return self.meta.client.download_file(
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/inject.py", line 170, in download_file
+    return transfer.download_file(
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/transfer.py", line 307, in download_file
+    future.result()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/futures.py", line 106, in result
+    return self._coordinator.result()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/futures.py", line 265, in result
+    raise self._exception
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/tasks.py", line 126, in __call__
+    return self._execute_main(kwargs)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/tasks.py", line 150, in _execute_main
+    return_value = self._main(**kwargs)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/download.py", line 571, in _main
+    fileobj.seek(offset)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 367, in seek
+    self._open_if_needed()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 350, in _open_if_needed
+    self._fileobj = self._open_function(self._filename, self._mode)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 261, in open
+    return open(filename, mode)
+FileNotFoundError: [Errno 2] No such file or directory: './data/netflix_titles.csv.83F63bd9'
+[2021-03-31 01:56:36,144] {scheduler_job.py:641} WARNING - No viable dags retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:56:36,183] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 3.964 seconds
+[2021-03-31 01:57:12,413] {scheduler_job.py:182} INFO - Started process (PID=13093) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:57:12,430] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 01:57:12,431] {logging_mixin.py:104} INFO - [2021-03-31 01:57:12,431] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:57:13,862] {logging_mixin.py:104} INFO - [2021-03-31 01:57:13,862] {credentials.py:1222} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2021-03-31 01:57:15,377] {logging_mixin.py:104} INFO - Upload Complete!
+[2021-03-31 01:57:15,696] {logging_mixin.py:104} INFO - Downloading file netflix_titles.csv..
+[2021-03-31 01:57:15,953] {logging_mixin.py:104} INFO - [2021-03-31 01:57:15,951] {dagbag.py:305} ERROR - Failed to import: /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+Traceback (most recent call last):
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py", line 71, in <module>
+    download_data()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py", line 68, in download_data
+    bucket_name.download_file(s3_object.key, path+filename)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/inject.py", line 244, in bucket_download_file
+    return self.meta.client.download_file(
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/inject.py", line 170, in download_file
+    return transfer.download_file(
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/boto3/s3/transfer.py", line 307, in download_file
+    future.result()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/futures.py", line 106, in result
+    return self._coordinator.result()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/futures.py", line 265, in result
+    raise self._exception
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/tasks.py", line 126, in __call__
+    return self._execute_main(kwargs)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/tasks.py", line 150, in _execute_main
+    return_value = self._main(**kwargs)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/download.py", line 571, in _main
+    fileobj.seek(offset)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 367, in seek
+    self._open_if_needed()
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 350, in _open_if_needed
+    self._fileobj = self._open_function(self._filename, self._mode)
+  File "/home/prathamesh/PycharmProjects/airflow-basic/venv/lib/python3.8/site-packages/s3transfer/utils.py", line 261, in open
+    return open(filename, mode)
+FileNotFoundError: [Errno 2] No such file or directory: './data/netflix_titles.csv.015Fa02A'
+[2021-03-31 01:57:15,959] {scheduler_job.py:641} WARNING - No viable dags retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 01:57:16,001] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 3.592 seconds
+[2021-03-31 02:51:58,448] {scheduler_job.py:182} INFO - Started process (PID=13813) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:51:58,454] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 02:51:58,454] {logging_mixin.py:104} INFO - [2021-03-31 02:51:58,454] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:51:59,657] {logging_mixin.py:104} INFO - [2021-03-31 02:51:59,657] {arrow_result.pyx:0} INFO - Failed to import optional packages, pyarrow
+[2021-03-31 02:51:59,721] {logging_mixin.py:104} INFO - [2021-03-31 02:51:59,721] {connection.py:218} INFO - Snowflake Connector for Python Version: 2.4.1, Python Version: 3.8.5, Platform: Linux-5.8.0-48-generic-x86_64-with-glibc2.29
+[2021-03-31 02:51:59,721] {logging_mixin.py:104} INFO - [2021-03-31 02:51:59,721] {connection.py:773} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2021-03-31 02:51:59,721] {logging_mixin.py:104} INFO - [2021-03-31 02:51:59,721] {connection.py:789} INFO - Setting use_openssl_only mode to False
+[2021-03-31 02:52:00,672] {logging_mixin.py:104} INFO - [2021-03-31 02:52:00,672] {cursor.py:556} INFO - query: [SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 02:52:00,743] {logging_mixin.py:104} INFO - [2021-03-31 02:52:00,743] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:52:00,744] {logging_mixin.py:104} INFO - [2021-03-31 02:52:00,744] {cursor.py:556} INFO - query: [SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 02:52:00,826] {logging_mixin.py:104} INFO - [2021-03-31 02:52:00,826] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:52:00,827] {logging_mixin.py:104} INFO - [2021-03-31 02:52:00,827] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:52:00,896] {logging_mixin.py:104} INFO - [2021-03-31 02:52:00,896] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:52:00,897] {logging_mixin.py:104} INFO - [2021-03-31 02:52:00,897] {cursor.py:556} INFO - query: [DESC TABLE /* sqlalchemy:_has_object */ netflix_titles]
+[2021-03-31 02:52:01,001] {logging_mixin.py:104} INFO - [2021-03-31 02:52:01,000] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:52:01,038] {logging_mixin.py:104} INFO - [2021-03-31 02:52:01,038] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:52:01,100] {logging_mixin.py:104} INFO - [2021-03-31 02:52:01,099] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:52:01,100] {logging_mixin.py:104} INFO - [2021-03-31 02:52:01,100] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:52:01,163] {logging_mixin.py:104} INFO - [2021-03-31 02:52:01,163] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:52:01,169] {logging_mixin.py:104} INFO - [2021-03-31 02:52:01,169] {cursor.py:556} INFO - query: [CREATE TABLE netflix_titles ( show_id TEXT, type TEXT, title TEXT, director TEXT...]
+[2021-03-31 02:52:01,461] {logging_mixin.py:104} INFO - [2021-03-31 02:52:01,461] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:52:01,462] {logging_mixin.py:104} INFO - [2021-03-31 02:52:01,462] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:52:01,526] {logging_mixin.py:104} INFO - [2021-03-31 02:52:01,526] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:52:01,980] {logging_mixin.py:104} INFO - [2021-03-31 02:52:01,979] {cursor.py:556} INFO - query: [INSERT INTO netflix_titles (show_id, type, title, director, cast, country, date_...]
+[2021-03-31 02:52:06,886] {logging_mixin.py:104} INFO - [2021-03-31 02:52:06,886] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:52:06,886] {logging_mixin.py:104} INFO - [2021-03-31 02:52:06,886] {cursor.py:556} INFO - query: [COMMIT]
+[2021-03-31 02:52:07,104] {logging_mixin.py:104} INFO - [2021-03-31 02:52:07,104] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:52:07,104] {logging_mixin.py:104} INFO - [2021-03-31 02:52:07,104] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:52:07,179] {logging_mixin.py:104} INFO - [2021-03-31 02:52:07,179] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:52:07,180] {logging_mixin.py:104} INFO - Data loaded in table netflix_titles
+[2021-03-31 02:52:07,180] {logging_mixin.py:104} INFO - [2021-03-31 02:52:07,180] {connection.py:441} INFO - closed
+[2021-03-31 02:52:07,229] {logging_mixin.py:104} INFO - [2021-03-31 02:52:07,229] {connection.py:444} INFO - No async queries seem to be running, deleting session
+[2021-03-31 02:52:07,311] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ingestion-pipeline']) retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:52:07,316] {logging_mixin.py:104} INFO - [2021-03-31 02:52:07,316] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-31 02:52:07,335] {logging_mixin.py:104} INFO - [2021-03-31 02:52:07,334] {dag.py:2273} INFO - Setting next_dagrun for ingestion-pipeline to 2021-03-31 00:00:00+00:00
+[2021-03-31 02:52:07,353] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 8.909 seconds
+[2021-03-31 02:52:38,343] {scheduler_job.py:182} INFO - Started process (PID=13945) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:52:38,348] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 02:52:38,348] {logging_mixin.py:104} INFO - [2021-03-31 02:52:38,348] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:52:39,489] {logging_mixin.py:104} INFO - [2021-03-31 02:52:39,489] {arrow_result.pyx:0} INFO - Failed to import optional packages, pyarrow
+[2021-03-31 02:52:39,548] {logging_mixin.py:104} INFO - [2021-03-31 02:52:39,548] {connection.py:218} INFO - Snowflake Connector for Python Version: 2.4.1, Python Version: 3.8.5, Platform: Linux-5.8.0-48-generic-x86_64-with-glibc2.29
+[2021-03-31 02:52:39,548] {logging_mixin.py:104} INFO - [2021-03-31 02:52:39,548] {connection.py:773} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2021-03-31 02:52:39,548] {logging_mixin.py:104} INFO - [2021-03-31 02:52:39,548] {connection.py:789} INFO - Setting use_openssl_only mode to False
+[2021-03-31 02:52:40,268] {logging_mixin.py:104} INFO - [2021-03-31 02:52:40,267] {cursor.py:556} INFO - query: [SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 02:52:40,338] {logging_mixin.py:104} INFO - [2021-03-31 02:52:40,338] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:52:40,339] {logging_mixin.py:104} INFO - [2021-03-31 02:52:40,339] {cursor.py:556} INFO - query: [SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 02:52:40,411] {logging_mixin.py:104} INFO - [2021-03-31 02:52:40,411] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:52:40,411] {logging_mixin.py:104} INFO - [2021-03-31 02:52:40,411] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:52:40,483] {logging_mixin.py:104} INFO - [2021-03-31 02:52:40,483] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:52:40,484] {logging_mixin.py:104} INFO - [2021-03-31 02:52:40,484] {cursor.py:556} INFO - query: [DESC TABLE /* sqlalchemy:_has_object */ netflix_titles]
+[2021-03-31 02:52:40,581] {logging_mixin.py:104} INFO - [2021-03-31 02:52:40,581] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:52:40,581] {logging_mixin.py:104} INFO - [2021-03-31 02:52:40,581] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:52:40,648] {logging_mixin.py:104} INFO - [2021-03-31 02:52:40,648] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:52:41,102] {logging_mixin.py:104} INFO - [2021-03-31 02:52:41,102] {cursor.py:556} INFO - query: [INSERT INTO netflix_titles (show_id, type, title, director, cast, country, date_...]
+[2021-03-31 02:52:45,662] {logging_mixin.py:104} INFO - [2021-03-31 02:52:45,662] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:52:45,663] {logging_mixin.py:104} INFO - [2021-03-31 02:52:45,662] {cursor.py:556} INFO - query: [COMMIT]
+[2021-03-31 02:52:45,919] {logging_mixin.py:104} INFO - [2021-03-31 02:52:45,918] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:52:45,919] {logging_mixin.py:104} INFO - [2021-03-31 02:52:45,919] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:52:45,988] {logging_mixin.py:104} INFO - [2021-03-31 02:52:45,987] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:52:45,988] {logging_mixin.py:104} INFO - Data loaded in table netflix_titles
+[2021-03-31 02:52:45,988] {logging_mixin.py:104} INFO - [2021-03-31 02:52:45,988] {connection.py:441} INFO - closed
+[2021-03-31 02:52:46,019] {logging_mixin.py:104} INFO - [2021-03-31 02:52:46,019] {connection.py:444} INFO - No async queries seem to be running, deleting session
+[2021-03-31 02:52:46,113] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ingestion-pipeline']) retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:52:46,120] {logging_mixin.py:104} INFO - [2021-03-31 02:52:46,120] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-31 02:52:46,126] {logging_mixin.py:104} INFO - [2021-03-31 02:52:46,126] {dag.py:2273} INFO - Setting next_dagrun for ingestion-pipeline to 2021-03-31 00:00:00+00:00
+[2021-03-31 02:52:46,136] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 7.798 seconds
+[2021-03-31 02:53:16,357] {scheduler_job.py:182} INFO - Started process (PID=14078) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:53:16,358] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 02:53:16,359] {logging_mixin.py:104} INFO - [2021-03-31 02:53:16,359] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:53:17,517] {logging_mixin.py:104} INFO - [2021-03-31 02:53:17,517] {arrow_result.pyx:0} INFO - Failed to import optional packages, pyarrow
+[2021-03-31 02:53:17,572] {logging_mixin.py:104} INFO - [2021-03-31 02:53:17,572] {connection.py:218} INFO - Snowflake Connector for Python Version: 2.4.1, Python Version: 3.8.5, Platform: Linux-5.8.0-48-generic-x86_64-with-glibc2.29
+[2021-03-31 02:53:17,572] {logging_mixin.py:104} INFO - [2021-03-31 02:53:17,572] {connection.py:773} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2021-03-31 02:53:17,572] {logging_mixin.py:104} INFO - [2021-03-31 02:53:17,572] {connection.py:789} INFO - Setting use_openssl_only mode to False
+[2021-03-31 02:53:18,448] {logging_mixin.py:104} INFO - [2021-03-31 02:53:18,448] {cursor.py:556} INFO - query: [SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 02:53:18,536] {logging_mixin.py:104} INFO - [2021-03-31 02:53:18,536] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:53:18,537] {logging_mixin.py:104} INFO - [2021-03-31 02:53:18,537] {cursor.py:556} INFO - query: [SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 02:53:18,608] {logging_mixin.py:104} INFO - [2021-03-31 02:53:18,608] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:53:18,608] {logging_mixin.py:104} INFO - [2021-03-31 02:53:18,608] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:53:18,674] {logging_mixin.py:104} INFO - [2021-03-31 02:53:18,673] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:53:18,674] {logging_mixin.py:104} INFO - [2021-03-31 02:53:18,674] {cursor.py:556} INFO - query: [DESC TABLE /* sqlalchemy:_has_object */ netflix_titles]
+[2021-03-31 02:53:18,768] {logging_mixin.py:104} INFO - [2021-03-31 02:53:18,768] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:53:18,768] {logging_mixin.py:104} INFO - [2021-03-31 02:53:18,768] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:53:18,850] {logging_mixin.py:104} INFO - [2021-03-31 02:53:18,850] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:53:19,831] {logging_mixin.py:104} INFO - [2021-03-31 02:53:19,831] {cursor.py:556} INFO - query: [INSERT INTO netflix_titles (show_id, type, title, director, cast, country, date_...]
+[2021-03-31 02:53:25,979] {logging_mixin.py:104} INFO - [2021-03-31 02:53:25,979] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:53:25,980] {logging_mixin.py:104} INFO - [2021-03-31 02:53:25,980] {cursor.py:556} INFO - query: [COMMIT]
+[2021-03-31 02:53:26,550] {logging_mixin.py:104} INFO - [2021-03-31 02:53:26,550] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:53:26,551] {logging_mixin.py:104} INFO - [2021-03-31 02:53:26,551] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:53:26,633] {logging_mixin.py:104} INFO - [2021-03-31 02:53:26,633] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:53:26,634] {logging_mixin.py:104} INFO - Data loaded in table netflix_titles
+[2021-03-31 02:53:26,634] {logging_mixin.py:104} INFO - [2021-03-31 02:53:26,634] {connection.py:441} INFO - closed
+[2021-03-31 02:53:26,671] {logging_mixin.py:104} INFO - [2021-03-31 02:53:26,671] {connection.py:444} INFO - No async queries seem to be running, deleting session
+[2021-03-31 02:53:26,871] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ingestion-pipeline']) retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:53:26,875] {logging_mixin.py:104} INFO - [2021-03-31 02:53:26,875] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-31 02:53:26,882] {logging_mixin.py:104} INFO - [2021-03-31 02:53:26,882] {dag.py:2273} INFO - Setting next_dagrun for ingestion-pipeline to 2021-03-31 00:00:00+00:00
+[2021-03-31 02:53:26,884] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 10.534 seconds
+[2021-03-31 02:53:57,086] {scheduler_job.py:182} INFO - Started process (PID=14221) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:53:57,087] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 02:53:57,088] {logging_mixin.py:104} INFO - [2021-03-31 02:53:57,087] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:53:58,905] {logging_mixin.py:104} INFO - [2021-03-31 02:53:58,905] {arrow_result.pyx:0} INFO - Failed to import optional packages, pyarrow
+[2021-03-31 02:53:59,026] {logging_mixin.py:104} INFO - [2021-03-31 02:53:59,026] {connection.py:218} INFO - Snowflake Connector for Python Version: 2.4.1, Python Version: 3.8.5, Platform: Linux-5.8.0-48-generic-x86_64-with-glibc2.29
+[2021-03-31 02:53:59,032] {logging_mixin.py:104} INFO - [2021-03-31 02:53:59,032] {connection.py:773} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2021-03-31 02:53:59,032] {logging_mixin.py:104} INFO - [2021-03-31 02:53:59,032] {connection.py:789} INFO - Setting use_openssl_only mode to False
+[2021-03-31 02:53:59,795] {logging_mixin.py:104} INFO - [2021-03-31 02:53:59,795] {cursor.py:556} INFO - query: [SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 02:53:59,863] {logging_mixin.py:104} INFO - [2021-03-31 02:53:59,862] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:53:59,863] {logging_mixin.py:104} INFO - [2021-03-31 02:53:59,863] {cursor.py:556} INFO - query: [SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 02:53:59,937] {logging_mixin.py:104} INFO - [2021-03-31 02:53:59,937] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:53:59,938] {logging_mixin.py:104} INFO - [2021-03-31 02:53:59,938] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:54:00,027] {logging_mixin.py:104} INFO - [2021-03-31 02:54:00,027] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:54:00,028] {logging_mixin.py:104} INFO - [2021-03-31 02:54:00,028] {cursor.py:556} INFO - query: [DESC TABLE /* sqlalchemy:_has_object */ netflix_titles]
+[2021-03-31 02:54:00,100] {logging_mixin.py:104} INFO - [2021-03-31 02:54:00,100] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:54:00,100] {logging_mixin.py:104} INFO - [2021-03-31 02:54:00,100] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:54:00,163] {logging_mixin.py:104} INFO - [2021-03-31 02:54:00,163] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:54:00,824] {logging_mixin.py:104} INFO - [2021-03-31 02:54:00,824] {cursor.py:556} INFO - query: [INSERT INTO netflix_titles (show_id, type, title, director, cast, country, date_...]
+[2021-03-31 02:54:05,713] {logging_mixin.py:104} INFO - [2021-03-31 02:54:05,712] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:54:05,713] {logging_mixin.py:104} INFO - [2021-03-31 02:54:05,713] {cursor.py:556} INFO - query: [COMMIT]
+[2021-03-31 02:54:05,926] {logging_mixin.py:104} INFO - [2021-03-31 02:54:05,926] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:54:05,926] {logging_mixin.py:104} INFO - [2021-03-31 02:54:05,926] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:54:05,995] {logging_mixin.py:104} INFO - [2021-03-31 02:54:05,995] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:54:05,995] {logging_mixin.py:104} INFO - Data loaded in table netflix_titles
+[2021-03-31 02:54:05,996] {logging_mixin.py:104} INFO - [2021-03-31 02:54:05,996] {connection.py:441} INFO - closed
+[2021-03-31 02:54:06,029] {logging_mixin.py:104} INFO - [2021-03-31 02:54:06,029] {connection.py:444} INFO - No async queries seem to be running, deleting session
+[2021-03-31 02:54:06,109] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ingestion-pipeline']) retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:54:06,116] {logging_mixin.py:104} INFO - [2021-03-31 02:54:06,116] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-31 02:54:06,126] {logging_mixin.py:104} INFO - [2021-03-31 02:54:06,126] {dag.py:2273} INFO - Setting next_dagrun for ingestion-pipeline to 2021-03-31 00:00:00+00:00
+[2021-03-31 02:54:06,130] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 9.045 seconds
+[2021-03-31 02:54:36,338] {scheduler_job.py:182} INFO - Started process (PID=14355) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:54:36,339] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 02:54:36,339] {logging_mixin.py:104} INFO - [2021-03-31 02:54:36,339] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:54:37,831] {logging_mixin.py:104} INFO - [2021-03-31 02:54:37,831] {arrow_result.pyx:0} INFO - Failed to import optional packages, pyarrow
+[2021-03-31 02:54:37,893] {logging_mixin.py:104} INFO - [2021-03-31 02:54:37,893] {connection.py:218} INFO - Snowflake Connector for Python Version: 2.4.1, Python Version: 3.8.5, Platform: Linux-5.8.0-48-generic-x86_64-with-glibc2.29
+[2021-03-31 02:54:37,893] {logging_mixin.py:104} INFO - [2021-03-31 02:54:37,893] {connection.py:773} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2021-03-31 02:54:37,893] {logging_mixin.py:104} INFO - [2021-03-31 02:54:37,893] {connection.py:789} INFO - Setting use_openssl_only mode to False
+[2021-03-31 02:54:38,627] {logging_mixin.py:104} INFO - [2021-03-31 02:54:38,627] {cursor.py:556} INFO - query: [SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 02:54:38,704] {logging_mixin.py:104} INFO - [2021-03-31 02:54:38,704] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:54:38,708] {logging_mixin.py:104} INFO - [2021-03-31 02:54:38,708] {cursor.py:556} INFO - query: [SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 02:54:38,799] {logging_mixin.py:104} INFO - [2021-03-31 02:54:38,799] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:54:38,800] {logging_mixin.py:104} INFO - [2021-03-31 02:54:38,800] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:54:38,876] {logging_mixin.py:104} INFO - [2021-03-31 02:54:38,876] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:54:38,877] {logging_mixin.py:104} INFO - [2021-03-31 02:54:38,877] {cursor.py:556} INFO - query: [DESC TABLE /* sqlalchemy:_has_object */ netflix_titles]
+[2021-03-31 02:54:38,955] {logging_mixin.py:104} INFO - [2021-03-31 02:54:38,954] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:54:38,955] {logging_mixin.py:104} INFO - [2021-03-31 02:54:38,955] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:54:39,017] {logging_mixin.py:104} INFO - [2021-03-31 02:54:39,017] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:54:39,482] {logging_mixin.py:104} INFO - [2021-03-31 02:54:39,481] {cursor.py:556} INFO - query: [INSERT INTO netflix_titles (show_id, type, title, director, cast, country, date_...]
+[2021-03-31 02:54:43,813] {logging_mixin.py:104} INFO - [2021-03-31 02:54:43,813] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:54:43,813] {logging_mixin.py:104} INFO - [2021-03-31 02:54:43,813] {cursor.py:556} INFO - query: [COMMIT]
+[2021-03-31 02:54:44,053] {logging_mixin.py:104} INFO - [2021-03-31 02:54:44,053] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:54:44,054] {logging_mixin.py:104} INFO - [2021-03-31 02:54:44,053] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:54:44,125] {logging_mixin.py:104} INFO - [2021-03-31 02:54:44,125] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:54:44,126] {logging_mixin.py:104} INFO - Data loaded in table netflix_titles
+[2021-03-31 02:54:44,126] {logging_mixin.py:104} INFO - [2021-03-31 02:54:44,126] {connection.py:441} INFO - closed
+[2021-03-31 02:54:44,168] {logging_mixin.py:104} INFO - [2021-03-31 02:54:44,168] {connection.py:444} INFO - No async queries seem to be running, deleting session
+[2021-03-31 02:54:44,268] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ingestion-pipeline']) retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:54:44,274] {logging_mixin.py:104} INFO - [2021-03-31 02:54:44,274] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-31 02:54:44,279] {logging_mixin.py:104} INFO - [2021-03-31 02:54:44,279] {dag.py:2273} INFO - Setting next_dagrun for ingestion-pipeline to 2021-03-31 00:00:00+00:00
+[2021-03-31 02:54:44,286] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 7.950 seconds
+[2021-03-31 02:55:14,578] {scheduler_job.py:182} INFO - Started process (PID=14488) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:55:14,578] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 02:55:14,579] {logging_mixin.py:104} INFO - [2021-03-31 02:55:14,579] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:55:15,778] {logging_mixin.py:104} INFO - [2021-03-31 02:55:15,778] {arrow_result.pyx:0} INFO - Failed to import optional packages, pyarrow
+[2021-03-31 02:55:15,837] {logging_mixin.py:104} INFO - [2021-03-31 02:55:15,837] {connection.py:218} INFO - Snowflake Connector for Python Version: 2.4.1, Python Version: 3.8.5, Platform: Linux-5.8.0-48-generic-x86_64-with-glibc2.29
+[2021-03-31 02:55:15,837] {logging_mixin.py:104} INFO - [2021-03-31 02:55:15,837] {connection.py:773} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2021-03-31 02:55:15,837] {logging_mixin.py:104} INFO - [2021-03-31 02:55:15,837] {connection.py:789} INFO - Setting use_openssl_only mode to False
+[2021-03-31 02:55:16,529] {logging_mixin.py:104} INFO - [2021-03-31 02:55:16,529] {cursor.py:556} INFO - query: [SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 02:55:16,598] {logging_mixin.py:104} INFO - [2021-03-31 02:55:16,597] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:55:16,598] {logging_mixin.py:104} INFO - [2021-03-31 02:55:16,598] {cursor.py:556} INFO - query: [SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 02:55:16,666] {logging_mixin.py:104} INFO - [2021-03-31 02:55:16,665] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:55:16,666] {logging_mixin.py:104} INFO - [2021-03-31 02:55:16,666] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:55:16,750] {logging_mixin.py:104} INFO - [2021-03-31 02:55:16,750] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:55:16,750] {logging_mixin.py:104} INFO - [2021-03-31 02:55:16,750] {cursor.py:556} INFO - query: [DESC TABLE /* sqlalchemy:_has_object */ netflix_titles]
+[2021-03-31 02:55:16,837] {logging_mixin.py:104} INFO - [2021-03-31 02:55:16,837] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:55:16,838] {logging_mixin.py:104} INFO - [2021-03-31 02:55:16,838] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:55:16,903] {logging_mixin.py:104} INFO - [2021-03-31 02:55:16,903] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:55:17,466] {logging_mixin.py:104} INFO - [2021-03-31 02:55:17,466] {cursor.py:556} INFO - query: [INSERT INTO netflix_titles (show_id, type, title, director, cast, country, date_...]
+[2021-03-31 02:55:22,785] {logging_mixin.py:104} INFO - [2021-03-31 02:55:22,784] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:55:22,785] {logging_mixin.py:104} INFO - [2021-03-31 02:55:22,785] {cursor.py:556} INFO - query: [COMMIT]
+[2021-03-31 02:55:23,006] {logging_mixin.py:104} INFO - [2021-03-31 02:55:23,006] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:55:23,006] {logging_mixin.py:104} INFO - [2021-03-31 02:55:23,006] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:55:23,078] {logging_mixin.py:104} INFO - [2021-03-31 02:55:23,077] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:55:23,078] {logging_mixin.py:104} INFO - Data loaded in table netflix_titles
+[2021-03-31 02:55:23,078] {logging_mixin.py:104} INFO - [2021-03-31 02:55:23,078] {connection.py:441} INFO - closed
+[2021-03-31 02:55:23,116] {logging_mixin.py:104} INFO - [2021-03-31 02:55:23,116] {connection.py:444} INFO - No async queries seem to be running, deleting session
+[2021-03-31 02:55:23,218] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ingestion-pipeline']) retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:55:23,225] {logging_mixin.py:104} INFO - [2021-03-31 02:55:23,225] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-31 02:55:23,229] {logging_mixin.py:104} INFO - [2021-03-31 02:55:23,229] {dag.py:2273} INFO - Setting next_dagrun for ingestion-pipeline to 2021-03-31 00:00:00+00:00
+[2021-03-31 02:55:23,259] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 8.683 seconds
+[2021-03-31 02:56:14,392] {scheduler_job.py:182} INFO - Started process (PID=14627) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:56:14,404] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 02:56:14,405] {logging_mixin.py:104} INFO - [2021-03-31 02:56:14,405] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:56:18,459] {logging_mixin.py:104} INFO - [2021-03-31 02:56:18,459] {arrow_result.pyx:0} INFO - Failed to import optional packages, pyarrow
+[2021-03-31 02:56:18,610] {logging_mixin.py:104} INFO - [2021-03-31 02:56:18,610] {connection.py:218} INFO - Snowflake Connector for Python Version: 2.4.1, Python Version: 3.8.5, Platform: Linux-5.8.0-48-generic-x86_64-with-glibc2.29
+[2021-03-31 02:56:18,610] {logging_mixin.py:104} INFO - [2021-03-31 02:56:18,610] {connection.py:773} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2021-03-31 02:56:18,611] {logging_mixin.py:104} INFO - [2021-03-31 02:56:18,611] {connection.py:789} INFO - Setting use_openssl_only mode to False
+[2021-03-31 02:56:20,218] {logging_mixin.py:104} INFO - [2021-03-31 02:56:20,218] {cursor.py:556} INFO - query: [SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 02:56:20,317] {logging_mixin.py:104} INFO - [2021-03-31 02:56:20,317] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:56:20,318] {logging_mixin.py:104} INFO - [2021-03-31 02:56:20,318] {cursor.py:556} INFO - query: [SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 02:56:20,395] {logging_mixin.py:104} INFO - [2021-03-31 02:56:20,395] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:56:20,395] {logging_mixin.py:104} INFO - [2021-03-31 02:56:20,395] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:56:20,469] {logging_mixin.py:104} INFO - [2021-03-31 02:56:20,469] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:56:20,469] {logging_mixin.py:104} INFO - [2021-03-31 02:56:20,469] {cursor.py:556} INFO - query: [DESC TABLE /* sqlalchemy:_has_object */ netflix_titles]
+[2021-03-31 02:56:20,545] {logging_mixin.py:104} INFO - [2021-03-31 02:56:20,545] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:56:20,546] {logging_mixin.py:104} INFO - [2021-03-31 02:56:20,546] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:56:20,624] {logging_mixin.py:104} INFO - [2021-03-31 02:56:20,624] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:56:22,784] {logging_mixin.py:104} INFO - [2021-03-31 02:56:22,783] {cursor.py:556} INFO - query: [INSERT INTO netflix_titles (show_id, type, title, director, cast, country, date_...]
+[2021-03-31 02:56:28,761] {logging_mixin.py:104} INFO - [2021-03-31 02:56:28,761] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:56:28,761] {logging_mixin.py:104} INFO - [2021-03-31 02:56:28,761] {cursor.py:556} INFO - query: [COMMIT]
+[2021-03-31 02:56:28,983] {logging_mixin.py:104} INFO - [2021-03-31 02:56:28,983] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:56:28,983] {logging_mixin.py:104} INFO - [2021-03-31 02:56:28,983] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:56:29,065] {logging_mixin.py:104} INFO - [2021-03-31 02:56:29,065] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:56:29,066] {logging_mixin.py:104} INFO - Data loaded in table netflix_titles
+[2021-03-31 02:56:29,066] {logging_mixin.py:104} INFO - [2021-03-31 02:56:29,066] {connection.py:441} INFO - closed
+[2021-03-31 02:56:29,101] {logging_mixin.py:104} INFO - [2021-03-31 02:56:29,101] {connection.py:444} INFO - No async queries seem to be running, deleting session
+[2021-03-31 02:56:29,211] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ingestion-pipeline']) retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:56:29,224] {logging_mixin.py:104} INFO - [2021-03-31 02:56:29,224] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-31 02:56:29,232] {logging_mixin.py:104} INFO - [2021-03-31 02:56:29,232] {dag.py:2273} INFO - Setting next_dagrun for ingestion-pipeline to 2021-03-31 00:00:00+00:00
+[2021-03-31 02:56:29,248] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 14.859 seconds
+[2021-03-31 02:56:59,439] {scheduler_job.py:182} INFO - Started process (PID=14790) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:56:59,440] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 02:56:59,440] {logging_mixin.py:104} INFO - [2021-03-31 02:56:59,440] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:57:00,815] {logging_mixin.py:104} INFO - [2021-03-31 02:57:00,815] {arrow_result.pyx:0} INFO - Failed to import optional packages, pyarrow
+[2021-03-31 02:57:00,882] {logging_mixin.py:104} INFO - [2021-03-31 02:57:00,882] {connection.py:218} INFO - Snowflake Connector for Python Version: 2.4.1, Python Version: 3.8.5, Platform: Linux-5.8.0-48-generic-x86_64-with-glibc2.29
+[2021-03-31 02:57:00,883] {logging_mixin.py:104} INFO - [2021-03-31 02:57:00,883] {connection.py:773} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2021-03-31 02:57:00,883] {logging_mixin.py:104} INFO - [2021-03-31 02:57:00,883] {connection.py:789} INFO - Setting use_openssl_only mode to False
+[2021-03-31 02:57:01,926] {logging_mixin.py:104} INFO - [2021-03-31 02:57:01,925] {cursor.py:556} INFO - query: [SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 02:57:02,012] {logging_mixin.py:104} INFO - [2021-03-31 02:57:02,012] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:57:02,013] {logging_mixin.py:104} INFO - [2021-03-31 02:57:02,013] {cursor.py:556} INFO - query: [SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 02:57:02,084] {logging_mixin.py:104} INFO - [2021-03-31 02:57:02,084] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:57:02,084] {logging_mixin.py:104} INFO - [2021-03-31 02:57:02,084] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:57:02,152] {logging_mixin.py:104} INFO - [2021-03-31 02:57:02,152] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:57:02,152] {logging_mixin.py:104} INFO - [2021-03-31 02:57:02,152] {cursor.py:556} INFO - query: [DESC TABLE /* sqlalchemy:_has_object */ netflix_titles]
+[2021-03-31 02:57:02,218] {logging_mixin.py:104} INFO - [2021-03-31 02:57:02,218] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:57:02,218] {logging_mixin.py:104} INFO - [2021-03-31 02:57:02,218] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:57:02,289] {logging_mixin.py:104} INFO - [2021-03-31 02:57:02,289] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:57:02,751] {logging_mixin.py:104} INFO - [2021-03-31 02:57:02,751] {cursor.py:556} INFO - query: [INSERT INTO netflix_titles (show_id, type, title, director, cast, country, date_...]
+[2021-03-31 02:57:07,967] {logging_mixin.py:104} INFO - [2021-03-31 02:57:07,967] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:57:07,968] {logging_mixin.py:104} INFO - [2021-03-31 02:57:07,967] {cursor.py:556} INFO - query: [COMMIT]
+[2021-03-31 02:57:08,396] {logging_mixin.py:104} INFO - [2021-03-31 02:57:08,396] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:57:08,396] {logging_mixin.py:104} INFO - [2021-03-31 02:57:08,396] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:57:08,488] {logging_mixin.py:104} INFO - [2021-03-31 02:57:08,488] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:57:08,488] {logging_mixin.py:104} INFO - Data loaded in table netflix_titles
+[2021-03-31 02:57:08,488] {logging_mixin.py:104} INFO - [2021-03-31 02:57:08,488] {connection.py:441} INFO - closed
+[2021-03-31 02:57:08,524] {logging_mixin.py:104} INFO - [2021-03-31 02:57:08,524] {connection.py:444} INFO - No async queries seem to be running, deleting session
+[2021-03-31 02:57:08,620] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ingestion-pipeline']) retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:57:08,636] {logging_mixin.py:104} INFO - [2021-03-31 02:57:08,636] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-31 02:57:08,652] {logging_mixin.py:104} INFO - [2021-03-31 02:57:08,652] {dag.py:2273} INFO - Setting next_dagrun for ingestion-pipeline to 2021-03-31 00:00:00+00:00
+[2021-03-31 02:57:08,655] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 9.218 seconds
+[2021-03-31 02:57:38,751] {scheduler_job.py:182} INFO - Started process (PID=14925) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:57:38,765] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 02:57:38,765] {logging_mixin.py:104} INFO - [2021-03-31 02:57:38,765] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:57:41,150] {logging_mixin.py:104} INFO - [2021-03-31 02:57:41,150] {arrow_result.pyx:0} INFO - Failed to import optional packages, pyarrow
+[2021-03-31 02:57:41,212] {logging_mixin.py:104} INFO - [2021-03-31 02:57:41,212] {connection.py:218} INFO - Snowflake Connector for Python Version: 2.4.1, Python Version: 3.8.5, Platform: Linux-5.8.0-48-generic-x86_64-with-glibc2.29
+[2021-03-31 02:57:41,212] {logging_mixin.py:104} INFO - [2021-03-31 02:57:41,212] {connection.py:773} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2021-03-31 02:57:41,212] {logging_mixin.py:104} INFO - [2021-03-31 02:57:41,212] {connection.py:789} INFO - Setting use_openssl_only mode to False
+[2021-03-31 02:57:42,141] {logging_mixin.py:104} INFO - [2021-03-31 02:57:42,140] {cursor.py:556} INFO - query: [SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 02:57:42,217] {logging_mixin.py:104} INFO - [2021-03-31 02:57:42,217] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:57:42,218] {logging_mixin.py:104} INFO - [2021-03-31 02:57:42,218] {cursor.py:556} INFO - query: [SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 02:57:42,288] {logging_mixin.py:104} INFO - [2021-03-31 02:57:42,288] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:57:42,288] {logging_mixin.py:104} INFO - [2021-03-31 02:57:42,288] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:57:42,360] {logging_mixin.py:104} INFO - [2021-03-31 02:57:42,360] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:57:42,361] {logging_mixin.py:104} INFO - [2021-03-31 02:57:42,360] {cursor.py:556} INFO - query: [DESC TABLE /* sqlalchemy:_has_object */ netflix_titles]
+[2021-03-31 02:57:42,437] {logging_mixin.py:104} INFO - [2021-03-31 02:57:42,437] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:57:42,438] {logging_mixin.py:104} INFO - [2021-03-31 02:57:42,438] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:57:42,508] {logging_mixin.py:104} INFO - [2021-03-31 02:57:42,508] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:57:43,052] {logging_mixin.py:104} INFO - [2021-03-31 02:57:43,052] {cursor.py:556} INFO - query: [INSERT INTO netflix_titles (show_id, type, title, director, cast, country, date_...]
+[2021-03-31 02:57:47,713] {logging_mixin.py:104} INFO - [2021-03-31 02:57:47,712] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:57:47,713] {logging_mixin.py:104} INFO - [2021-03-31 02:57:47,713] {cursor.py:556} INFO - query: [COMMIT]
+[2021-03-31 02:57:47,944] {logging_mixin.py:104} INFO - [2021-03-31 02:57:47,944] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:57:47,945] {logging_mixin.py:104} INFO - [2021-03-31 02:57:47,945] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:57:48,110] {logging_mixin.py:104} INFO - [2021-03-31 02:57:48,110] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:57:48,111] {logging_mixin.py:104} INFO - Data loaded in table netflix_titles
+[2021-03-31 02:57:48,111] {logging_mixin.py:104} INFO - [2021-03-31 02:57:48,111] {connection.py:441} INFO - closed
+[2021-03-31 02:57:48,176] {logging_mixin.py:104} INFO - [2021-03-31 02:57:48,175] {connection.py:444} INFO - No async queries seem to be running, deleting session
+[2021-03-31 02:57:48,257] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ingestion-pipeline']) retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:57:48,263] {logging_mixin.py:104} INFO - [2021-03-31 02:57:48,263] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-31 02:57:48,273] {logging_mixin.py:104} INFO - [2021-03-31 02:57:48,273] {dag.py:2273} INFO - Setting next_dagrun for ingestion-pipeline to 2021-03-31 00:00:00+00:00
+[2021-03-31 02:57:48,277] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 9.528 seconds
+[2021-03-31 02:58:18,494] {scheduler_job.py:182} INFO - Started process (PID=15062) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:58:18,495] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 02:58:18,495] {logging_mixin.py:104} INFO - [2021-03-31 02:58:18,495] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:58:19,865] {logging_mixin.py:104} INFO - [2021-03-31 02:58:19,864] {arrow_result.pyx:0} INFO - Failed to import optional packages, pyarrow
+[2021-03-31 02:58:19,928] {logging_mixin.py:104} INFO - [2021-03-31 02:58:19,928] {connection.py:218} INFO - Snowflake Connector for Python Version: 2.4.1, Python Version: 3.8.5, Platform: Linux-5.8.0-48-generic-x86_64-with-glibc2.29
+[2021-03-31 02:58:19,928] {logging_mixin.py:104} INFO - [2021-03-31 02:58:19,928] {connection.py:773} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2021-03-31 02:58:19,928] {logging_mixin.py:104} INFO - [2021-03-31 02:58:19,928] {connection.py:789} INFO - Setting use_openssl_only mode to False
+[2021-03-31 02:58:20,832] {logging_mixin.py:104} INFO - [2021-03-31 02:58:20,832] {cursor.py:556} INFO - query: [SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 02:58:20,906] {logging_mixin.py:104} INFO - [2021-03-31 02:58:20,906] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:58:20,907] {logging_mixin.py:104} INFO - [2021-03-31 02:58:20,907] {cursor.py:556} INFO - query: [SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 02:58:20,977] {logging_mixin.py:104} INFO - [2021-03-31 02:58:20,977] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:58:20,977] {logging_mixin.py:104} INFO - [2021-03-31 02:58:20,977] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:58:21,047] {logging_mixin.py:104} INFO - [2021-03-31 02:58:21,047] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:58:21,047] {logging_mixin.py:104} INFO - [2021-03-31 02:58:21,047] {cursor.py:556} INFO - query: [DESC TABLE /* sqlalchemy:_has_object */ netflix_titles]
+[2021-03-31 02:58:21,116] {logging_mixin.py:104} INFO - [2021-03-31 02:58:21,116] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:58:21,116] {logging_mixin.py:104} INFO - [2021-03-31 02:58:21,116] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:58:21,180] {logging_mixin.py:104} INFO - [2021-03-31 02:58:21,180] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:58:21,727] {logging_mixin.py:104} INFO - [2021-03-31 02:58:21,727] {cursor.py:556} INFO - query: [INSERT INTO netflix_titles (show_id, type, title, director, cast, country, date_...]
+[2021-03-31 02:58:26,589] {logging_mixin.py:104} INFO - [2021-03-31 02:58:26,589] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:58:26,590] {logging_mixin.py:104} INFO - [2021-03-31 02:58:26,590] {cursor.py:556} INFO - query: [COMMIT]
+[2021-03-31 02:58:26,804] {logging_mixin.py:104} INFO - [2021-03-31 02:58:26,804] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:58:26,805] {logging_mixin.py:104} INFO - [2021-03-31 02:58:26,805] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:58:26,866] {logging_mixin.py:104} INFO - [2021-03-31 02:58:26,866] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:58:26,866] {logging_mixin.py:104} INFO - Data loaded in table netflix_titles
+[2021-03-31 02:58:26,867] {logging_mixin.py:104} INFO - [2021-03-31 02:58:26,867] {connection.py:441} INFO - closed
+[2021-03-31 02:58:26,902] {logging_mixin.py:104} INFO - [2021-03-31 02:58:26,902] {connection.py:444} INFO - No async queries seem to be running, deleting session
+[2021-03-31 02:58:26,986] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ingestion-pipeline']) retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:58:26,992] {logging_mixin.py:104} INFO - [2021-03-31 02:58:26,992] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-31 02:58:26,998] {logging_mixin.py:104} INFO - [2021-03-31 02:58:26,998] {dag.py:2273} INFO - Setting next_dagrun for ingestion-pipeline to 2021-03-31 00:00:00+00:00
+[2021-03-31 02:58:27,004] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 8.512 seconds
+[2021-03-31 02:58:57,257] {scheduler_job.py:182} INFO - Started process (PID=15193) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:58:57,258] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 02:58:57,258] {logging_mixin.py:104} INFO - [2021-03-31 02:58:57,258] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:59:00,047] {logging_mixin.py:104} INFO - [2021-03-31 02:59:00,047] {arrow_result.pyx:0} INFO - Failed to import optional packages, pyarrow
+[2021-03-31 02:59:00,198] {logging_mixin.py:104} INFO - [2021-03-31 02:59:00,198] {connection.py:218} INFO - Snowflake Connector for Python Version: 2.4.1, Python Version: 3.8.5, Platform: Linux-5.8.0-48-generic-x86_64-with-glibc2.29
+[2021-03-31 02:59:00,198] {logging_mixin.py:104} INFO - [2021-03-31 02:59:00,198] {connection.py:773} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2021-03-31 02:59:00,199] {logging_mixin.py:104} INFO - [2021-03-31 02:59:00,198] {connection.py:789} INFO - Setting use_openssl_only mode to False
+[2021-03-31 02:59:01,442] {logging_mixin.py:104} INFO - [2021-03-31 02:59:01,442] {cursor.py:556} INFO - query: [SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 02:59:01,517] {logging_mixin.py:104} INFO - [2021-03-31 02:59:01,517] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:59:01,519] {logging_mixin.py:104} INFO - [2021-03-31 02:59:01,519] {cursor.py:556} INFO - query: [SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 02:59:01,602] {logging_mixin.py:104} INFO - [2021-03-31 02:59:01,602] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:59:01,603] {logging_mixin.py:104} INFO - [2021-03-31 02:59:01,603] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:59:01,671] {logging_mixin.py:104} INFO - [2021-03-31 02:59:01,671] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:59:01,671] {logging_mixin.py:104} INFO - [2021-03-31 02:59:01,671] {cursor.py:556} INFO - query: [DESC TABLE /* sqlalchemy:_has_object */ netflix_titles]
+[2021-03-31 02:59:01,737] {logging_mixin.py:104} INFO - [2021-03-31 02:59:01,737] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:59:01,737] {logging_mixin.py:104} INFO - [2021-03-31 02:59:01,737] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:59:01,803] {logging_mixin.py:104} INFO - [2021-03-31 02:59:01,803] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:59:02,639] {logging_mixin.py:104} INFO - [2021-03-31 02:59:02,639] {cursor.py:556} INFO - query: [INSERT INTO netflix_titles (show_id, type, title, director, cast, country, date_...]
+[2021-03-31 02:59:06,525] {logging_mixin.py:104} INFO - [2021-03-31 02:59:06,525] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:59:06,525] {logging_mixin.py:104} INFO - [2021-03-31 02:59:06,525] {cursor.py:556} INFO - query: [COMMIT]
+[2021-03-31 02:59:06,766] {logging_mixin.py:104} INFO - [2021-03-31 02:59:06,766] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:59:06,767] {logging_mixin.py:104} INFO - [2021-03-31 02:59:06,767] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 02:59:06,844] {logging_mixin.py:104} INFO - [2021-03-31 02:59:06,844] {cursor.py:572} INFO - query execution done
+[2021-03-31 02:59:06,844] {logging_mixin.py:104} INFO - Data loaded in table netflix_titles
+[2021-03-31 02:59:06,844] {logging_mixin.py:104} INFO - [2021-03-31 02:59:06,844] {connection.py:441} INFO - closed
+[2021-03-31 02:59:06,881] {logging_mixin.py:104} INFO - [2021-03-31 02:59:06,881] {connection.py:444} INFO - No async queries seem to be running, deleting session
+[2021-03-31 02:59:06,990] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ingestion-pipeline']) retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 02:59:07,005] {logging_mixin.py:104} INFO - [2021-03-31 02:59:07,005] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-31 02:59:07,013] {logging_mixin.py:104} INFO - [2021-03-31 02:59:07,013] {dag.py:2273} INFO - Setting next_dagrun for ingestion-pipeline to 2021-03-31 00:00:00+00:00
+[2021-03-31 02:59:07,020] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 9.765 seconds
+[2021-03-31 03:00:40,842] {scheduler_job.py:182} INFO - Started process (PID=15979) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:00:40,844] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 03:00:40,845] {logging_mixin.py:104} INFO - [2021-03-31 03:00:40,845] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:00:43,144] {logging_mixin.py:104} INFO - [2021-03-31 03:00:43,144] {arrow_result.pyx:0} INFO - Failed to import optional packages, pyarrow
+[2021-03-31 03:00:43,282] {logging_mixin.py:104} INFO - [2021-03-31 03:00:43,282] {connection.py:218} INFO - Snowflake Connector for Python Version: 2.4.1, Python Version: 3.8.5, Platform: Linux-5.8.0-48-generic-x86_64-with-glibc2.29
+[2021-03-31 03:00:43,296] {logging_mixin.py:104} INFO - [2021-03-31 03:00:43,296] {connection.py:773} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2021-03-31 03:00:43,297] {logging_mixin.py:104} INFO - [2021-03-31 03:00:43,296] {connection.py:789} INFO - Setting use_openssl_only mode to False
+[2021-03-31 03:00:44,363] {logging_mixin.py:104} INFO - [2021-03-31 03:00:44,363] {cursor.py:556} INFO - query: [SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 03:00:44,436] {logging_mixin.py:104} INFO - [2021-03-31 03:00:44,436] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:00:44,436] {logging_mixin.py:104} INFO - [2021-03-31 03:00:44,436] {cursor.py:556} INFO - query: [SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 03:00:44,508] {logging_mixin.py:104} INFO - [2021-03-31 03:00:44,508] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:00:44,508] {logging_mixin.py:104} INFO - [2021-03-31 03:00:44,508] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:00:44,580] {logging_mixin.py:104} INFO - [2021-03-31 03:00:44,580] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:00:44,580] {logging_mixin.py:104} INFO - [2021-03-31 03:00:44,580] {cursor.py:556} INFO - query: [DESC TABLE /* sqlalchemy:_has_object */ netflix_titles]
+[2021-03-31 03:00:44,660] {logging_mixin.py:104} INFO - [2021-03-31 03:00:44,660] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:00:44,660] {logging_mixin.py:104} INFO - [2021-03-31 03:00:44,660] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:00:44,731] {logging_mixin.py:104} INFO - [2021-03-31 03:00:44,731] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:00:45,707] {logging_mixin.py:104} INFO - [2021-03-31 03:00:45,707] {cursor.py:556} INFO - query: [INSERT INTO netflix_titles (show_id, type, title, director, cast, country, date_...]
+[2021-03-31 03:00:50,420] {logging_mixin.py:104} INFO - [2021-03-31 03:00:50,420] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:00:50,420] {logging_mixin.py:104} INFO - [2021-03-31 03:00:50,420] {cursor.py:556} INFO - query: [COMMIT]
+[2021-03-31 03:00:50,657] {logging_mixin.py:104} INFO - [2021-03-31 03:00:50,657] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:00:50,657] {logging_mixin.py:104} INFO - [2021-03-31 03:00:50,657] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:00:50,728] {logging_mixin.py:104} INFO - [2021-03-31 03:00:50,728] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:00:50,728] {logging_mixin.py:104} INFO - Data loaded in table netflix_titles
+[2021-03-31 03:00:50,728] {logging_mixin.py:104} INFO - [2021-03-31 03:00:50,728] {connection.py:441} INFO - closed
+[2021-03-31 03:00:50,772] {logging_mixin.py:104} INFO - [2021-03-31 03:00:50,772] {connection.py:444} INFO - No async queries seem to be running, deleting session
+[2021-03-31 03:00:50,859] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ingestion-pipeline']) retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:00:50,867] {logging_mixin.py:104} INFO - [2021-03-31 03:00:50,867] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-31 03:00:50,876] {logging_mixin.py:104} INFO - [2021-03-31 03:00:50,876] {dag.py:2273} INFO - Setting next_dagrun for ingestion-pipeline to None
+[2021-03-31 03:00:50,879] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 10.039 seconds
+[2021-03-31 03:01:21,116] {scheduler_job.py:182} INFO - Started process (PID=16117) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:01:21,117] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 03:01:21,117] {logging_mixin.py:104} INFO - [2021-03-31 03:01:21,117] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:01:22,307] {logging_mixin.py:104} INFO - [2021-03-31 03:01:22,306] {arrow_result.pyx:0} INFO - Failed to import optional packages, pyarrow
+[2021-03-31 03:01:22,367] {logging_mixin.py:104} INFO - [2021-03-31 03:01:22,367] {connection.py:218} INFO - Snowflake Connector for Python Version: 2.4.1, Python Version: 3.8.5, Platform: Linux-5.8.0-48-generic-x86_64-with-glibc2.29
+[2021-03-31 03:01:22,368] {logging_mixin.py:104} INFO - [2021-03-31 03:01:22,368] {connection.py:773} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2021-03-31 03:01:22,368] {logging_mixin.py:104} INFO - [2021-03-31 03:01:22,368] {connection.py:789} INFO - Setting use_openssl_only mode to False
+[2021-03-31 03:01:23,087] {logging_mixin.py:104} INFO - [2021-03-31 03:01:23,087] {cursor.py:556} INFO - query: [SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 03:01:23,167] {logging_mixin.py:104} INFO - [2021-03-31 03:01:23,167] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:01:23,168] {logging_mixin.py:104} INFO - [2021-03-31 03:01:23,168] {cursor.py:556} INFO - query: [SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 03:01:23,246] {logging_mixin.py:104} INFO - [2021-03-31 03:01:23,246] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:01:23,247] {logging_mixin.py:104} INFO - [2021-03-31 03:01:23,247] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:01:23,314] {logging_mixin.py:104} INFO - [2021-03-31 03:01:23,314] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:01:23,314] {logging_mixin.py:104} INFO - [2021-03-31 03:01:23,314] {cursor.py:556} INFO - query: [DESC TABLE /* sqlalchemy:_has_object */ netflix_titles]
+[2021-03-31 03:01:23,401] {logging_mixin.py:104} INFO - [2021-03-31 03:01:23,400] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:01:23,401] {logging_mixin.py:104} INFO - [2021-03-31 03:01:23,401] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:01:23,466] {logging_mixin.py:104} INFO - [2021-03-31 03:01:23,466] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:01:24,087] {logging_mixin.py:104} INFO - [2021-03-31 03:01:24,087] {cursor.py:556} INFO - query: [INSERT INTO netflix_titles (show_id, type, title, director, cast, country, date_...]
+[2021-03-31 03:01:28,584] {logging_mixin.py:104} INFO - [2021-03-31 03:01:28,584] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:01:28,584] {logging_mixin.py:104} INFO - [2021-03-31 03:01:28,584] {cursor.py:556} INFO - query: [COMMIT]
+[2021-03-31 03:01:28,827] {logging_mixin.py:104} INFO - [2021-03-31 03:01:28,827] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:01:28,829] {logging_mixin.py:104} INFO - [2021-03-31 03:01:28,828] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:01:28,909] {logging_mixin.py:104} INFO - [2021-03-31 03:01:28,908] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:01:28,909] {logging_mixin.py:104} INFO - Data loaded in table netflix_titles
+[2021-03-31 03:01:28,909] {logging_mixin.py:104} INFO - [2021-03-31 03:01:28,909] {connection.py:441} INFO - closed
+[2021-03-31 03:01:28,940] {logging_mixin.py:104} INFO - [2021-03-31 03:01:28,940] {connection.py:444} INFO - No async queries seem to be running, deleting session
+[2021-03-31 03:01:29,058] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ingestion-pipeline']) retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:01:29,065] {logging_mixin.py:104} INFO - [2021-03-31 03:01:29,064] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-31 03:01:29,071] {logging_mixin.py:104} INFO - [2021-03-31 03:01:29,071] {dag.py:2273} INFO - Setting next_dagrun for ingestion-pipeline to None
+[2021-03-31 03:01:29,074] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 7.962 seconds
+[2021-03-31 03:01:59,280] {scheduler_job.py:182} INFO - Started process (PID=16249) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:01:59,281] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 03:01:59,281] {logging_mixin.py:104} INFO - [2021-03-31 03:01:59,281] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:02:00,648] {logging_mixin.py:104} INFO - [2021-03-31 03:02:00,648] {arrow_result.pyx:0} INFO - Failed to import optional packages, pyarrow
+[2021-03-31 03:02:00,706] {logging_mixin.py:104} INFO - [2021-03-31 03:02:00,705] {connection.py:218} INFO - Snowflake Connector for Python Version: 2.4.1, Python Version: 3.8.5, Platform: Linux-5.8.0-48-generic-x86_64-with-glibc2.29
+[2021-03-31 03:02:00,706] {logging_mixin.py:104} INFO - [2021-03-31 03:02:00,706] {connection.py:773} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2021-03-31 03:02:00,706] {logging_mixin.py:104} INFO - [2021-03-31 03:02:00,706] {connection.py:789} INFO - Setting use_openssl_only mode to False
+[2021-03-31 03:02:01,397] {logging_mixin.py:104} INFO - [2021-03-31 03:02:01,396] {cursor.py:556} INFO - query: [SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 03:02:01,478] {logging_mixin.py:104} INFO - [2021-03-31 03:02:01,478] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:02:01,479] {logging_mixin.py:104} INFO - [2021-03-31 03:02:01,479] {cursor.py:556} INFO - query: [SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 03:02:01,558] {logging_mixin.py:104} INFO - [2021-03-31 03:02:01,558] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:02:01,558] {logging_mixin.py:104} INFO - [2021-03-31 03:02:01,558] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:02:01,632] {logging_mixin.py:104} INFO - [2021-03-31 03:02:01,632] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:02:01,633] {logging_mixin.py:104} INFO - [2021-03-31 03:02:01,633] {cursor.py:556} INFO - query: [DESC TABLE /* sqlalchemy:_has_object */ netflix_titles]
+[2021-03-31 03:02:01,703] {logging_mixin.py:104} INFO - [2021-03-31 03:02:01,703] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:02:01,704] {logging_mixin.py:104} INFO - [2021-03-31 03:02:01,704] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:02:01,782] {logging_mixin.py:104} INFO - [2021-03-31 03:02:01,781] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:02:02,184] {logging_mixin.py:104} INFO - [2021-03-31 03:02:02,184] {cursor.py:556} INFO - query: [INSERT INTO netflix_titles (show_id, type, title, director, cast, country, date_...]
+[2021-03-31 03:02:06,644] {logging_mixin.py:104} INFO - [2021-03-31 03:02:06,644] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:02:06,645] {logging_mixin.py:104} INFO - [2021-03-31 03:02:06,645] {cursor.py:556} INFO - query: [COMMIT]
+[2021-03-31 03:02:06,916] {logging_mixin.py:104} INFO - [2021-03-31 03:02:06,916] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:02:06,916] {logging_mixin.py:104} INFO - [2021-03-31 03:02:06,916] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:02:07,077] {logging_mixin.py:104} INFO - [2021-03-31 03:02:07,077] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:02:07,078] {logging_mixin.py:104} INFO - Data loaded in table netflix_titles
+[2021-03-31 03:02:07,078] {logging_mixin.py:104} INFO - [2021-03-31 03:02:07,078] {connection.py:441} INFO - closed
+[2021-03-31 03:02:07,120] {logging_mixin.py:104} INFO - [2021-03-31 03:02:07,119] {connection.py:444} INFO - No async queries seem to be running, deleting session
+[2021-03-31 03:02:07,213] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ingestion-pipeline']) retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:02:07,219] {logging_mixin.py:104} INFO - [2021-03-31 03:02:07,219] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-31 03:02:07,225] {logging_mixin.py:104} INFO - [2021-03-31 03:02:07,225] {dag.py:2273} INFO - Setting next_dagrun for ingestion-pipeline to None
+[2021-03-31 03:02:07,228] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 7.951 seconds
+[2021-03-31 03:02:37,423] {scheduler_job.py:182} INFO - Started process (PID=16382) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:02:37,424] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 03:02:37,424] {logging_mixin.py:104} INFO - [2021-03-31 03:02:37,424] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:02:38,655] {logging_mixin.py:104} INFO - [2021-03-31 03:02:38,654] {arrow_result.pyx:0} INFO - Failed to import optional packages, pyarrow
+[2021-03-31 03:02:38,738] {logging_mixin.py:104} INFO - [2021-03-31 03:02:38,734] {connection.py:218} INFO - Snowflake Connector for Python Version: 2.4.1, Python Version: 3.8.5, Platform: Linux-5.8.0-48-generic-x86_64-with-glibc2.29
+[2021-03-31 03:02:38,738] {logging_mixin.py:104} INFO - [2021-03-31 03:02:38,738] {connection.py:773} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2021-03-31 03:02:38,738] {logging_mixin.py:104} INFO - [2021-03-31 03:02:38,738] {connection.py:789} INFO - Setting use_openssl_only mode to False
+[2021-03-31 03:02:39,489] {logging_mixin.py:104} INFO - [2021-03-31 03:02:39,488] {cursor.py:556} INFO - query: [SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 03:02:39,574] {logging_mixin.py:104} INFO - [2021-03-31 03:02:39,574] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:02:39,576] {logging_mixin.py:104} INFO - [2021-03-31 03:02:39,576] {cursor.py:556} INFO - query: [SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 03:02:39,651] {logging_mixin.py:104} INFO - [2021-03-31 03:02:39,651] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:02:39,652] {logging_mixin.py:104} INFO - [2021-03-31 03:02:39,652] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:02:39,723] {logging_mixin.py:104} INFO - [2021-03-31 03:02:39,723] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:02:39,723] {logging_mixin.py:104} INFO - [2021-03-31 03:02:39,723] {cursor.py:556} INFO - query: [DESC TABLE /* sqlalchemy:_has_object */ netflix_titles]
+[2021-03-31 03:02:39,801] {logging_mixin.py:104} INFO - [2021-03-31 03:02:39,801] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:02:39,802] {logging_mixin.py:104} INFO - [2021-03-31 03:02:39,802] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:02:39,875] {logging_mixin.py:104} INFO - [2021-03-31 03:02:39,875] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:02:40,325] {logging_mixin.py:104} INFO - [2021-03-31 03:02:40,325] {cursor.py:556} INFO - query: [INSERT INTO netflix_titles (show_id, type, title, director, cast, country, date_...]
+[2021-03-31 03:02:44,666] {logging_mixin.py:104} INFO - [2021-03-31 03:02:44,666] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:02:44,666] {logging_mixin.py:104} INFO - [2021-03-31 03:02:44,666] {cursor.py:556} INFO - query: [COMMIT]
+[2021-03-31 03:02:44,898] {logging_mixin.py:104} INFO - [2021-03-31 03:02:44,898] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:02:44,898] {logging_mixin.py:104} INFO - [2021-03-31 03:02:44,898] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:02:44,968] {logging_mixin.py:104} INFO - [2021-03-31 03:02:44,968] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:02:44,968] {logging_mixin.py:104} INFO - Data loaded in table netflix_titles
+[2021-03-31 03:02:44,968] {logging_mixin.py:104} INFO - [2021-03-31 03:02:44,968] {connection.py:441} INFO - closed
+[2021-03-31 03:02:45,003] {logging_mixin.py:104} INFO - [2021-03-31 03:02:45,003] {connection.py:444} INFO - No async queries seem to be running, deleting session
+[2021-03-31 03:02:45,086] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ingestion-pipeline']) retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:02:45,091] {logging_mixin.py:104} INFO - [2021-03-31 03:02:45,091] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-31 03:02:45,096] {logging_mixin.py:104} INFO - [2021-03-31 03:02:45,096] {dag.py:2273} INFO - Setting next_dagrun for ingestion-pipeline to None
+[2021-03-31 03:02:45,101] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 7.680 seconds
+[2021-03-31 03:03:15,341] {scheduler_job.py:182} INFO - Started process (PID=16513) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:03:15,343] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 03:03:15,344] {logging_mixin.py:104} INFO - [2021-03-31 03:03:15,344] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:03:17,759] {logging_mixin.py:104} INFO - [2021-03-31 03:03:17,759] {arrow_result.pyx:0} INFO - Failed to import optional packages, pyarrow
+[2021-03-31 03:03:17,943] {logging_mixin.py:104} INFO - [2021-03-31 03:03:17,943] {connection.py:218} INFO - Snowflake Connector for Python Version: 2.4.1, Python Version: 3.8.5, Platform: Linux-5.8.0-48-generic-x86_64-with-glibc2.29
+[2021-03-31 03:03:17,949] {logging_mixin.py:104} INFO - [2021-03-31 03:03:17,949] {connection.py:773} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2021-03-31 03:03:17,949] {logging_mixin.py:104} INFO - [2021-03-31 03:03:17,949] {connection.py:789} INFO - Setting use_openssl_only mode to False
+[2021-03-31 03:03:19,231] {logging_mixin.py:104} INFO - [2021-03-31 03:03:19,231] {cursor.py:556} INFO - query: [SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 03:03:19,320] {logging_mixin.py:104} INFO - [2021-03-31 03:03:19,320] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:03:19,321] {logging_mixin.py:104} INFO - [2021-03-31 03:03:19,321] {cursor.py:556} INFO - query: [SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 03:03:19,412] {logging_mixin.py:104} INFO - [2021-03-31 03:03:19,412] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:03:19,413] {logging_mixin.py:104} INFO - [2021-03-31 03:03:19,412] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:03:19,490] {logging_mixin.py:104} INFO - [2021-03-31 03:03:19,490] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:03:19,490] {logging_mixin.py:104} INFO - [2021-03-31 03:03:19,490] {cursor.py:556} INFO - query: [DESC TABLE /* sqlalchemy:_has_object */ netflix_titles]
+[2021-03-31 03:03:19,584] {logging_mixin.py:104} INFO - [2021-03-31 03:03:19,584] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:03:19,584] {logging_mixin.py:104} INFO - [2021-03-31 03:03:19,584] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:03:19,644] {logging_mixin.py:104} INFO - [2021-03-31 03:03:19,644] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:03:20,669] {logging_mixin.py:104} INFO - [2021-03-31 03:03:20,669] {cursor.py:556} INFO - query: [INSERT INTO netflix_titles (show_id, type, title, director, cast, country, date_...]
+[2021-03-31 03:03:25,912] {logging_mixin.py:104} INFO - [2021-03-31 03:03:25,912] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:03:25,913] {logging_mixin.py:104} INFO - [2021-03-31 03:03:25,913] {cursor.py:556} INFO - query: [COMMIT]
+[2021-03-31 03:03:26,146] {logging_mixin.py:104} INFO - [2021-03-31 03:03:26,146] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:03:26,147] {logging_mixin.py:104} INFO - [2021-03-31 03:03:26,147] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:03:26,218] {logging_mixin.py:104} INFO - [2021-03-31 03:03:26,218] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:03:26,219] {logging_mixin.py:104} INFO - Data loaded in table netflix_titles
+[2021-03-31 03:03:26,219] {logging_mixin.py:104} INFO - [2021-03-31 03:03:26,219] {connection.py:441} INFO - closed
+[2021-03-31 03:03:26,259] {logging_mixin.py:104} INFO - [2021-03-31 03:03:26,258] {connection.py:444} INFO - No async queries seem to be running, deleting session
+[2021-03-31 03:03:26,363] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ingestion-pipeline']) retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:03:26,376] {logging_mixin.py:104} INFO - [2021-03-31 03:03:26,376] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-31 03:03:26,381] {logging_mixin.py:104} INFO - [2021-03-31 03:03:26,381] {dag.py:2273} INFO - Setting next_dagrun for ingestion-pipeline to None
+[2021-03-31 03:03:26,384] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 11.045 seconds
+[2021-03-31 03:03:56,595] {scheduler_job.py:182} INFO - Started process (PID=16645) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:03:56,595] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 03:03:56,596] {logging_mixin.py:104} INFO - [2021-03-31 03:03:56,596] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:03:58,056] {logging_mixin.py:104} INFO - [2021-03-31 03:03:58,056] {arrow_result.pyx:0} INFO - Failed to import optional packages, pyarrow
+[2021-03-31 03:03:58,116] {logging_mixin.py:104} INFO - [2021-03-31 03:03:58,116] {connection.py:218} INFO - Snowflake Connector for Python Version: 2.4.1, Python Version: 3.8.5, Platform: Linux-5.8.0-48-generic-x86_64-with-glibc2.29
+[2021-03-31 03:03:58,117] {logging_mixin.py:104} INFO - [2021-03-31 03:03:58,116] {connection.py:773} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2021-03-31 03:03:58,117] {logging_mixin.py:104} INFO - [2021-03-31 03:03:58,117] {connection.py:789} INFO - Setting use_openssl_only mode to False
+[2021-03-31 03:03:58,849] {logging_mixin.py:104} INFO - [2021-03-31 03:03:58,848] {cursor.py:556} INFO - query: [SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 03:03:58,918] {logging_mixin.py:104} INFO - [2021-03-31 03:03:58,918] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:03:58,919] {logging_mixin.py:104} INFO - [2021-03-31 03:03:58,919] {cursor.py:556} INFO - query: [SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 03:03:58,987] {logging_mixin.py:104} INFO - [2021-03-31 03:03:58,987] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:03:58,987] {logging_mixin.py:104} INFO - [2021-03-31 03:03:58,987] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:03:59,056] {logging_mixin.py:104} INFO - [2021-03-31 03:03:59,056] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:03:59,056] {logging_mixin.py:104} INFO - [2021-03-31 03:03:59,056] {cursor.py:556} INFO - query: [DESC TABLE /* sqlalchemy:_has_object */ netflix_titles]
+[2021-03-31 03:03:59,126] {logging_mixin.py:104} INFO - [2021-03-31 03:03:59,126] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:03:59,126] {logging_mixin.py:104} INFO - [2021-03-31 03:03:59,126] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:03:59,204] {logging_mixin.py:104} INFO - [2021-03-31 03:03:59,203] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:03:59,769] {logging_mixin.py:104} INFO - [2021-03-31 03:03:59,769] {cursor.py:556} INFO - query: [INSERT INTO netflix_titles (show_id, type, title, director, cast, country, date_...]
+[2021-03-31 03:04:04,027] {logging_mixin.py:104} INFO - [2021-03-31 03:04:04,027] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:04:04,028] {logging_mixin.py:104} INFO - [2021-03-31 03:04:04,027] {cursor.py:556} INFO - query: [COMMIT]
+[2021-03-31 03:04:04,277] {logging_mixin.py:104} INFO - [2021-03-31 03:04:04,277] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:04:04,277] {logging_mixin.py:104} INFO - [2021-03-31 03:04:04,277] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:04:04,351] {logging_mixin.py:104} INFO - [2021-03-31 03:04:04,351] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:04:04,351] {logging_mixin.py:104} INFO - Data loaded in table netflix_titles
+[2021-03-31 03:04:04,351] {logging_mixin.py:104} INFO - [2021-03-31 03:04:04,351] {connection.py:441} INFO - closed
+[2021-03-31 03:04:04,387] {logging_mixin.py:104} INFO - [2021-03-31 03:04:04,386] {connection.py:444} INFO - No async queries seem to be running, deleting session
+[2021-03-31 03:04:04,469] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ingestion-pipeline']) retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:04:04,474] {logging_mixin.py:104} INFO - [2021-03-31 03:04:04,474] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-31 03:04:04,479] {logging_mixin.py:104} INFO - [2021-03-31 03:04:04,479] {dag.py:2273} INFO - Setting next_dagrun for ingestion-pipeline to None
+[2021-03-31 03:04:04,484] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 7.891 seconds
+[2021-03-31 03:04:34,791] {scheduler_job.py:182} INFO - Started process (PID=16777) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:04:34,793] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 03:04:34,793] {logging_mixin.py:104} INFO - [2021-03-31 03:04:34,793] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:04:36,668] {logging_mixin.py:104} INFO - [2021-03-31 03:04:36,668] {arrow_result.pyx:0} INFO - Failed to import optional packages, pyarrow
+[2021-03-31 03:04:36,786] {logging_mixin.py:104} INFO - [2021-03-31 03:04:36,786] {connection.py:218} INFO - Snowflake Connector for Python Version: 2.4.1, Python Version: 3.8.5, Platform: Linux-5.8.0-48-generic-x86_64-with-glibc2.29
+[2021-03-31 03:04:36,789] {logging_mixin.py:104} INFO - [2021-03-31 03:04:36,789] {connection.py:773} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2021-03-31 03:04:36,789] {logging_mixin.py:104} INFO - [2021-03-31 03:04:36,789] {connection.py:789} INFO - Setting use_openssl_only mode to False
+[2021-03-31 03:04:37,704] {logging_mixin.py:104} INFO - [2021-03-31 03:04:37,704] {cursor.py:556} INFO - query: [SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 03:04:37,782] {logging_mixin.py:104} INFO - [2021-03-31 03:04:37,782] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:04:37,783] {logging_mixin.py:104} INFO - [2021-03-31 03:04:37,783] {cursor.py:556} INFO - query: [SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 03:04:37,857] {logging_mixin.py:104} INFO - [2021-03-31 03:04:37,857] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:04:37,858] {logging_mixin.py:104} INFO - [2021-03-31 03:04:37,857] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:04:37,937] {logging_mixin.py:104} INFO - [2021-03-31 03:04:37,937] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:04:37,938] {logging_mixin.py:104} INFO - [2021-03-31 03:04:37,938] {cursor.py:556} INFO - query: [DESC TABLE /* sqlalchemy:_has_object */ netflix_titles]
+[2021-03-31 03:04:38,014] {logging_mixin.py:104} INFO - [2021-03-31 03:04:38,014] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:04:38,015] {logging_mixin.py:104} INFO - [2021-03-31 03:04:38,015] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:04:38,099] {logging_mixin.py:104} INFO - [2021-03-31 03:04:38,099] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:04:38,798] {logging_mixin.py:104} INFO - [2021-03-31 03:04:38,798] {cursor.py:556} INFO - query: [INSERT INTO netflix_titles (show_id, type, title, director, cast, country, date_...]
+[2021-03-31 03:04:43,117] {logging_mixin.py:104} INFO - [2021-03-31 03:04:43,117] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:04:43,117] {logging_mixin.py:104} INFO - [2021-03-31 03:04:43,117] {cursor.py:556} INFO - query: [COMMIT]
+[2021-03-31 03:04:43,487] {logging_mixin.py:104} INFO - [2021-03-31 03:04:43,487] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:04:43,488] {logging_mixin.py:104} INFO - [2021-03-31 03:04:43,488] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:04:43,562] {logging_mixin.py:104} INFO - [2021-03-31 03:04:43,562] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:04:43,562] {logging_mixin.py:104} INFO - Data loaded in table netflix_titles
+[2021-03-31 03:04:43,562] {logging_mixin.py:104} INFO - [2021-03-31 03:04:43,562] {connection.py:441} INFO - closed
+[2021-03-31 03:04:43,596] {logging_mixin.py:104} INFO - [2021-03-31 03:04:43,596] {connection.py:444} INFO - No async queries seem to be running, deleting session
+[2021-03-31 03:04:43,692] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ingestion-pipeline']) retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:04:43,705] {logging_mixin.py:104} INFO - [2021-03-31 03:04:43,705] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-31 03:04:43,713] {logging_mixin.py:104} INFO - [2021-03-31 03:04:43,713] {dag.py:2273} INFO - Setting next_dagrun for ingestion-pipeline to None
+[2021-03-31 03:04:43,717] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 8.931 seconds
+[2021-03-31 03:05:13,936] {scheduler_job.py:182} INFO - Started process (PID=16908) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:05:13,937] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 03:05:13,937] {logging_mixin.py:104} INFO - [2021-03-31 03:05:13,937] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:05:15,082] {logging_mixin.py:104} INFO - [2021-03-31 03:05:15,081] {arrow_result.pyx:0} INFO - Failed to import optional packages, pyarrow
+[2021-03-31 03:05:15,136] {logging_mixin.py:104} INFO - [2021-03-31 03:05:15,136] {connection.py:218} INFO - Snowflake Connector for Python Version: 2.4.1, Python Version: 3.8.5, Platform: Linux-5.8.0-48-generic-x86_64-with-glibc2.29
+[2021-03-31 03:05:15,137] {logging_mixin.py:104} INFO - [2021-03-31 03:05:15,137] {connection.py:773} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2021-03-31 03:05:15,137] {logging_mixin.py:104} INFO - [2021-03-31 03:05:15,137] {connection.py:789} INFO - Setting use_openssl_only mode to False
+[2021-03-31 03:05:15,860] {logging_mixin.py:104} INFO - [2021-03-31 03:05:15,860] {cursor.py:556} INFO - query: [SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 03:05:15,934] {logging_mixin.py:104} INFO - [2021-03-31 03:05:15,934] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:05:15,935] {logging_mixin.py:104} INFO - [2021-03-31 03:05:15,935] {cursor.py:556} INFO - query: [SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 03:05:16,012] {logging_mixin.py:104} INFO - [2021-03-31 03:05:16,012] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:05:16,013] {logging_mixin.py:104} INFO - [2021-03-31 03:05:16,013] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:05:16,098] {logging_mixin.py:104} INFO - [2021-03-31 03:05:16,098] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:05:16,099] {logging_mixin.py:104} INFO - [2021-03-31 03:05:16,099] {cursor.py:556} INFO - query: [DESC TABLE /* sqlalchemy:_has_object */ netflix_titles]
+[2021-03-31 03:05:16,177] {logging_mixin.py:104} INFO - [2021-03-31 03:05:16,177] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:05:16,178] {logging_mixin.py:104} INFO - [2021-03-31 03:05:16,178] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:05:16,255] {logging_mixin.py:104} INFO - [2021-03-31 03:05:16,255] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:05:16,713] {logging_mixin.py:104} INFO - [2021-03-31 03:05:16,713] {cursor.py:556} INFO - query: [INSERT INTO netflix_titles (show_id, type, title, director, cast, country, date_...]
+[2021-03-31 03:05:20,773] {logging_mixin.py:104} INFO - [2021-03-31 03:05:20,773] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:05:20,773] {logging_mixin.py:104} INFO - [2021-03-31 03:05:20,773] {cursor.py:556} INFO - query: [COMMIT]
+[2021-03-31 03:05:21,021] {logging_mixin.py:104} INFO - [2021-03-31 03:05:21,021] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:05:21,022] {logging_mixin.py:104} INFO - [2021-03-31 03:05:21,022] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:05:21,104] {logging_mixin.py:104} INFO - [2021-03-31 03:05:21,104] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:05:21,104] {logging_mixin.py:104} INFO - Data loaded in table netflix_titles
+[2021-03-31 03:05:21,104] {logging_mixin.py:104} INFO - [2021-03-31 03:05:21,104] {connection.py:441} INFO - closed
+[2021-03-31 03:05:21,151] {logging_mixin.py:104} INFO - [2021-03-31 03:05:21,151] {connection.py:444} INFO - No async queries seem to be running, deleting session
+[2021-03-31 03:05:21,247] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ingestion-pipeline']) retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:05:21,252] {logging_mixin.py:104} INFO - [2021-03-31 03:05:21,252] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-31 03:05:21,257] {logging_mixin.py:104} INFO - [2021-03-31 03:05:21,257] {dag.py:2273} INFO - Setting next_dagrun for ingestion-pipeline to None
+[2021-03-31 03:05:21,260] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 7.326 seconds
+[2021-03-31 03:05:51,475] {scheduler_job.py:182} INFO - Started process (PID=17048) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:05:51,489] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 03:05:51,490] {logging_mixin.py:104} INFO - [2021-03-31 03:05:51,490] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:05:53,991] {logging_mixin.py:104} INFO - [2021-03-31 03:05:53,990] {arrow_result.pyx:0} INFO - Failed to import optional packages, pyarrow
+[2021-03-31 03:05:54,121] {logging_mixin.py:104} INFO - [2021-03-31 03:05:54,121] {connection.py:218} INFO - Snowflake Connector for Python Version: 2.4.1, Python Version: 3.8.5, Platform: Linux-5.8.0-48-generic-x86_64-with-glibc2.29
+[2021-03-31 03:05:54,121] {logging_mixin.py:104} INFO - [2021-03-31 03:05:54,121] {connection.py:773} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2021-03-31 03:05:54,122] {logging_mixin.py:104} INFO - [2021-03-31 03:05:54,121] {connection.py:789} INFO - Setting use_openssl_only mode to False
+[2021-03-31 03:05:54,855] {logging_mixin.py:104} INFO - [2021-03-31 03:05:54,854] {cursor.py:556} INFO - query: [SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 03:05:54,927] {logging_mixin.py:104} INFO - [2021-03-31 03:05:54,926] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:05:54,927] {logging_mixin.py:104} INFO - [2021-03-31 03:05:54,927] {cursor.py:556} INFO - query: [SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 03:05:54,992] {logging_mixin.py:104} INFO - [2021-03-31 03:05:54,992] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:05:54,992] {logging_mixin.py:104} INFO - [2021-03-31 03:05:54,992] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:05:55,068] {logging_mixin.py:104} INFO - [2021-03-31 03:05:55,068] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:05:55,068] {logging_mixin.py:104} INFO - [2021-03-31 03:05:55,068] {cursor.py:556} INFO - query: [DESC TABLE /* sqlalchemy:_has_object */ netflix_titles]
+[2021-03-31 03:05:55,142] {logging_mixin.py:104} INFO - [2021-03-31 03:05:55,142] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:05:55,142] {logging_mixin.py:104} INFO - [2021-03-31 03:05:55,142] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:05:55,212] {logging_mixin.py:104} INFO - [2021-03-31 03:05:55,212] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:05:56,003] {logging_mixin.py:104} INFO - [2021-03-31 03:05:56,003] {cursor.py:556} INFO - query: [INSERT INTO netflix_titles (show_id, type, title, director, cast, country, date_...]
+[2021-03-31 03:06:00,870] {logging_mixin.py:104} INFO - [2021-03-31 03:06:00,870] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:06:00,870] {logging_mixin.py:104} INFO - [2021-03-31 03:06:00,870] {cursor.py:556} INFO - query: [COMMIT]
+[2021-03-31 03:06:01,097] {logging_mixin.py:104} INFO - [2021-03-31 03:06:01,097] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:06:01,098] {logging_mixin.py:104} INFO - [2021-03-31 03:06:01,097] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:06:01,178] {logging_mixin.py:104} INFO - [2021-03-31 03:06:01,178] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:06:01,179] {logging_mixin.py:104} INFO - Data loaded in table netflix_titles
+[2021-03-31 03:06:01,179] {logging_mixin.py:104} INFO - [2021-03-31 03:06:01,179] {connection.py:441} INFO - closed
+[2021-03-31 03:06:01,248] {logging_mixin.py:104} INFO - [2021-03-31 03:06:01,248] {connection.py:444} INFO - No async queries seem to be running, deleting session
+[2021-03-31 03:06:01,362] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ingestion-pipeline']) retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:06:01,369] {logging_mixin.py:104} INFO - [2021-03-31 03:06:01,369] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-31 03:06:01,374] {logging_mixin.py:104} INFO - [2021-03-31 03:06:01,374] {dag.py:2273} INFO - Setting next_dagrun for ingestion-pipeline to None
+[2021-03-31 03:06:01,378] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 9.905 seconds
+[2021-03-31 03:06:31,603] {scheduler_job.py:182} INFO - Started process (PID=17180) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:06:31,604] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 03:06:31,604] {logging_mixin.py:104} INFO - [2021-03-31 03:06:31,604] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:06:32,969] {logging_mixin.py:104} INFO - [2021-03-31 03:06:32,969] {arrow_result.pyx:0} INFO - Failed to import optional packages, pyarrow
+[2021-03-31 03:06:33,029] {logging_mixin.py:104} INFO - [2021-03-31 03:06:33,029] {connection.py:218} INFO - Snowflake Connector for Python Version: 2.4.1, Python Version: 3.8.5, Platform: Linux-5.8.0-48-generic-x86_64-with-glibc2.29
+[2021-03-31 03:06:33,031] {logging_mixin.py:104} INFO - [2021-03-31 03:06:33,031] {connection.py:773} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2021-03-31 03:06:33,031] {logging_mixin.py:104} INFO - [2021-03-31 03:06:33,031] {connection.py:789} INFO - Setting use_openssl_only mode to False
+[2021-03-31 03:06:33,737] {logging_mixin.py:104} INFO - [2021-03-31 03:06:33,737] {cursor.py:556} INFO - query: [SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 03:06:33,810] {logging_mixin.py:104} INFO - [2021-03-31 03:06:33,810] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:06:33,811] {logging_mixin.py:104} INFO - [2021-03-31 03:06:33,811] {cursor.py:556} INFO - query: [SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 03:06:33,883] {logging_mixin.py:104} INFO - [2021-03-31 03:06:33,883] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:06:33,883] {logging_mixin.py:104} INFO - [2021-03-31 03:06:33,883] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:06:33,953] {logging_mixin.py:104} INFO - [2021-03-31 03:06:33,953] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:06:33,954] {logging_mixin.py:104} INFO - [2021-03-31 03:06:33,954] {cursor.py:556} INFO - query: [DESC TABLE /* sqlalchemy:_has_object */ netflix_titles]
+[2021-03-31 03:06:34,050] {logging_mixin.py:104} INFO - [2021-03-31 03:06:34,050] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:06:34,050] {logging_mixin.py:104} INFO - [2021-03-31 03:06:34,050] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:06:34,122] {logging_mixin.py:104} INFO - [2021-03-31 03:06:34,122] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:06:34,596] {logging_mixin.py:104} INFO - [2021-03-31 03:06:34,596] {cursor.py:556} INFO - query: [INSERT INTO netflix_titles (show_id, type, title, director, cast, country, date_...]
+[2021-03-31 03:06:39,008] {logging_mixin.py:104} INFO - [2021-03-31 03:06:39,008] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:06:39,008] {logging_mixin.py:104} INFO - [2021-03-31 03:06:39,008] {cursor.py:556} INFO - query: [COMMIT]
+[2021-03-31 03:06:39,257] {logging_mixin.py:104} INFO - [2021-03-31 03:06:39,257] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:06:39,257] {logging_mixin.py:104} INFO - [2021-03-31 03:06:39,257] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:06:39,341] {logging_mixin.py:104} INFO - [2021-03-31 03:06:39,340] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:06:39,341] {logging_mixin.py:104} INFO - Data loaded in table netflix_titles
+[2021-03-31 03:06:39,341] {logging_mixin.py:104} INFO - [2021-03-31 03:06:39,341] {connection.py:441} INFO - closed
+[2021-03-31 03:06:39,378] {logging_mixin.py:104} INFO - [2021-03-31 03:06:39,377] {connection.py:444} INFO - No async queries seem to be running, deleting session
+[2021-03-31 03:06:39,477] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ingestion-pipeline']) retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:06:39,483] {logging_mixin.py:104} INFO - [2021-03-31 03:06:39,483] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-31 03:06:39,491] {logging_mixin.py:104} INFO - [2021-03-31 03:06:39,491] {dag.py:2273} INFO - Setting next_dagrun for ingestion-pipeline to None
+[2021-03-31 03:06:39,494] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 7.894 seconds
+[2021-03-31 03:07:09,692] {scheduler_job.py:182} INFO - Started process (PID=17314) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:07:09,693] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 03:07:09,694] {logging_mixin.py:104} INFO - [2021-03-31 03:07:09,694] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:07:11,239] {logging_mixin.py:104} INFO - [2021-03-31 03:07:11,239] {arrow_result.pyx:0} INFO - Failed to import optional packages, pyarrow
+[2021-03-31 03:07:11,321] {logging_mixin.py:104} INFO - [2021-03-31 03:07:11,321] {connection.py:218} INFO - Snowflake Connector for Python Version: 2.4.1, Python Version: 3.8.5, Platform: Linux-5.8.0-48-generic-x86_64-with-glibc2.29
+[2021-03-31 03:07:11,322] {logging_mixin.py:104} INFO - [2021-03-31 03:07:11,322] {connection.py:773} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2021-03-31 03:07:11,322] {logging_mixin.py:104} INFO - [2021-03-31 03:07:11,322] {connection.py:789} INFO - Setting use_openssl_only mode to False
+[2021-03-31 03:07:12,399] {logging_mixin.py:104} INFO - [2021-03-31 03:07:12,399] {cursor.py:556} INFO - query: [SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 03:07:12,480] {logging_mixin.py:104} INFO - [2021-03-31 03:07:12,480] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:07:12,482] {logging_mixin.py:104} INFO - [2021-03-31 03:07:12,482] {cursor.py:556} INFO - query: [SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 03:07:12,553] {logging_mixin.py:104} INFO - [2021-03-31 03:07:12,553] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:07:12,554] {logging_mixin.py:104} INFO - [2021-03-31 03:07:12,554] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:07:12,618] {logging_mixin.py:104} INFO - [2021-03-31 03:07:12,617] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:07:12,618] {logging_mixin.py:104} INFO - [2021-03-31 03:07:12,618] {cursor.py:556} INFO - query: [DESC TABLE /* sqlalchemy:_has_object */ netflix_titles]
+[2021-03-31 03:07:12,705] {logging_mixin.py:104} INFO - [2021-03-31 03:07:12,705] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:07:12,706] {logging_mixin.py:104} INFO - [2021-03-31 03:07:12,706] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:07:12,782] {logging_mixin.py:104} INFO - [2021-03-31 03:07:12,782] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:07:13,528] {logging_mixin.py:104} INFO - [2021-03-31 03:07:13,527] {cursor.py:556} INFO - query: [INSERT INTO netflix_titles (show_id, type, title, director, cast, country, date_...]
+[2021-03-31 03:07:17,406] {logging_mixin.py:104} INFO - [2021-03-31 03:07:17,406] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:07:17,406] {logging_mixin.py:104} INFO - [2021-03-31 03:07:17,406] {cursor.py:556} INFO - query: [COMMIT]
+[2021-03-31 03:07:17,667] {logging_mixin.py:104} INFO - [2021-03-31 03:07:17,667] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:07:17,671] {logging_mixin.py:104} INFO - [2021-03-31 03:07:17,671] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:07:17,762] {logging_mixin.py:104} INFO - [2021-03-31 03:07:17,762] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:07:17,762] {logging_mixin.py:104} INFO - Data loaded in table netflix_titles
+[2021-03-31 03:07:17,762] {logging_mixin.py:104} INFO - [2021-03-31 03:07:17,762] {connection.py:441} INFO - closed
+[2021-03-31 03:07:17,807] {logging_mixin.py:104} INFO - [2021-03-31 03:07:17,806] {connection.py:444} INFO - No async queries seem to be running, deleting session
+[2021-03-31 03:07:17,905] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ingestion-pipeline']) retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:07:17,916] {logging_mixin.py:104} INFO - [2021-03-31 03:07:17,916] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-31 03:07:17,926] {logging_mixin.py:104} INFO - [2021-03-31 03:07:17,926] {dag.py:2273} INFO - Setting next_dagrun for ingestion-pipeline to None
+[2021-03-31 03:07:17,931] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 8.241 seconds
+[2021-03-31 03:07:48,103] {scheduler_job.py:182} INFO - Started process (PID=17446) to work on /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:07:48,103] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py for tasks to queue
+[2021-03-31 03:07:48,104] {logging_mixin.py:104} INFO - [2021-03-31 03:07:48,104] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:07:50,220] {logging_mixin.py:104} INFO - [2021-03-31 03:07:50,219] {arrow_result.pyx:0} INFO - Failed to import optional packages, pyarrow
+[2021-03-31 03:07:50,329] {logging_mixin.py:104} INFO - [2021-03-31 03:07:50,329] {connection.py:218} INFO - Snowflake Connector for Python Version: 2.4.1, Python Version: 3.8.5, Platform: Linux-5.8.0-48-generic-x86_64-with-glibc2.29
+[2021-03-31 03:07:50,329] {logging_mixin.py:104} INFO - [2021-03-31 03:07:50,329] {connection.py:773} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2021-03-31 03:07:50,329] {logging_mixin.py:104} INFO - [2021-03-31 03:07:50,329] {connection.py:789} INFO - Setting use_openssl_only mode to False
+[2021-03-31 03:07:51,235] {logging_mixin.py:104} INFO - [2021-03-31 03:07:51,235] {cursor.py:556} INFO - query: [SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 03:07:51,315] {logging_mixin.py:104} INFO - [2021-03-31 03:07:51,315] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:07:51,316] {logging_mixin.py:104} INFO - [2021-03-31 03:07:51,316] {cursor.py:556} INFO - query: [SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1]
+[2021-03-31 03:07:51,412] {logging_mixin.py:104} INFO - [2021-03-31 03:07:51,411] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:07:51,412] {logging_mixin.py:104} INFO - [2021-03-31 03:07:51,412] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:07:51,487] {logging_mixin.py:104} INFO - [2021-03-31 03:07:51,487] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:07:51,488] {logging_mixin.py:104} INFO - [2021-03-31 03:07:51,488] {cursor.py:556} INFO - query: [DESC TABLE /* sqlalchemy:_has_object */ netflix_titles]
+[2021-03-31 03:07:51,569] {logging_mixin.py:104} INFO - [2021-03-31 03:07:51,569] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:07:51,569] {logging_mixin.py:104} INFO - [2021-03-31 03:07:51,569] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:07:51,638] {logging_mixin.py:104} INFO - [2021-03-31 03:07:51,638] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:07:52,280] {logging_mixin.py:104} INFO - [2021-03-31 03:07:52,280] {cursor.py:556} INFO - query: [INSERT INTO netflix_titles (show_id, type, title, director, cast, country, date_...]
+[2021-03-31 03:07:56,841] {logging_mixin.py:104} INFO - [2021-03-31 03:07:56,841] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:07:56,842] {logging_mixin.py:104} INFO - [2021-03-31 03:07:56,842] {cursor.py:556} INFO - query: [COMMIT]
+[2021-03-31 03:07:57,153] {logging_mixin.py:104} INFO - [2021-03-31 03:07:57,153] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:07:57,153] {logging_mixin.py:104} INFO - [2021-03-31 03:07:57,153] {cursor.py:556} INFO - query: [ROLLBACK]
+[2021-03-31 03:07:57,227] {logging_mixin.py:104} INFO - [2021-03-31 03:07:57,227] {cursor.py:572} INFO - query execution done
+[2021-03-31 03:07:57,227] {logging_mixin.py:104} INFO - Data loaded in table netflix_titles
+[2021-03-31 03:07:57,228] {logging_mixin.py:104} INFO - [2021-03-31 03:07:57,228] {connection.py:441} INFO - closed
+[2021-03-31 03:07:57,286] {logging_mixin.py:104} INFO - [2021-03-31 03:07:57,286] {connection.py:444} INFO - No async queries seem to be running, deleting session
+[2021-03-31 03:07:57,379] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ingestion-pipeline']) retrieved from /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py
+[2021-03-31 03:07:57,398] {logging_mixin.py:104} INFO - [2021-03-31 03:07:57,398] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-03-31 03:07:57,411] {logging_mixin.py:104} INFO - [2021-03-31 03:07:57,411] {dag.py:2273} INFO - Setting next_dagrun for ingestion-pipeline to None
+[2021-03-31 03:07:57,414] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-basic/dags/ingestion.py took 9.317 seconds
