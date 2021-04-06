@@ -1,0 +1,38 @@
+[2021-04-04 22:00:45,302] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: user_processing.storing_user 2021-04-05T01:57:21.562906+00:00 [queued]>
+[2021-04-04 22:00:45,309] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: user_processing.storing_user 2021-04-05T01:57:21.562906+00:00 [queued]>
+[2021-04-04 22:00:45,309] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2021-04-04 22:00:45,309] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2021-04-04 22:00:45,309] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2021-04-04 22:00:45,320] {taskinstance.py:1063} INFO - Executing <Task(BashOperator): storing_user> on 2021-04-05T01:57:21.562906+00:00
+[2021-04-04 22:00:45,323] {standard_task_runner.py:52} INFO - Started process 7704 to run task
+[2021-04-04 22:00:45,330] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'user_processing', 'storing_user', '2021-04-05T01:57:21.562906+00:00', '--job-id', '16', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/user_processing.py', '--cfg-path', '/tmp/tmpr08z2dwk', '--error-file', '/tmp/tmpow206apt']
+[2021-04-04 22:00:45,330] {standard_task_runner.py:77} INFO - Job 16: Subtask storing_user
+[2021-04-04 22:00:45,356] {logging_mixin.py:104} INFO - Running <TaskInstance: user_processing.storing_user 2021-04-05T01:57:21.562906+00:00 [running]> on host prathamesh-VirtualBox
+[2021-04-04 22:00:45,376] {taskinstance.py:1255} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=user_processing
+AIRFLOW_CTX_TASK_ID=storing_user
+AIRFLOW_CTX_EXECUTION_DATE=2021-04-05T01:57:21.562906+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-04-05T01:57:21.562906+00:00
+[2021-04-04 22:00:45,376] {bash.py:135} INFO - Tmp dir root location: 
+ /tmp
+[2021-04-04 22:00:45,377] {bash.py:158} INFO - Running command: echo -e ".separator ","
+.import /tmp/processed_user.csv users" | sqlite3 /home/prathamesh/PycharmProjects/airflow-project/airflow.db
+[2021-04-04 22:00:45,383] {bash.py:169} INFO - Output:
+[2021-04-04 22:00:45,386] {bash.py:173} INFO - /tmp/processed_user.csv:1: INSERT failed: UNIQUE constraint failed: users.email
+[2021-04-04 22:00:45,386] {bash.py:177} INFO - Command exited with return code 1
+[2021-04-04 22:00:45,391] {taskinstance.py:1455} ERROR - Bash command failed. The command returned a non-zero exit code.
+Traceback (most recent call last):
+  File "/home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/operators/bash.py", line 180, in execute
+    raise AirflowException('Bash command failed. The command returned a non-zero exit code.')
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code.
+[2021-04-04 22:00:45,396] {taskinstance.py:1496} INFO - Marking task as FAILED. dag_id=user_processing, task_id=storing_user, execution_date=20210405T015721, start_date=20210405T020045, end_date=20210405T020045
+[2021-04-04 22:00:45,442] {local_task_job.py:146} INFO - Task exited with return code 1

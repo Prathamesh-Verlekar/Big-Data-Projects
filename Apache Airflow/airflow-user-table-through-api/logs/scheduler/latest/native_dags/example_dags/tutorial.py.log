@@ -1,0 +1,49 @@
+[2021-04-04 21:52:35,130] {scheduler_job.py:182} INFO - Started process (PID=7163) to work on /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-04-04 21:52:35,131] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-04-04 21:52:35,132] {logging_mixin.py:104} INFO - [2021-04-04 21:52:35,132] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-04-04 21:52:35,149] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-04-04 21:52:35,180] {logging_mixin.py:104} INFO - [2021-04-04 21:52:35,180] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-04-04 21:52:35,200] {logging_mixin.py:104} INFO - [2021-04-04 21:52:35,199] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-04-03 00:00:00+00:00
+[2021-04-04 21:52:35,234] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py took 0.117 seconds
+[2021-04-04 22:00:45,639] {scheduler_job.py:182} INFO - Started process (PID=7708) to work on /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-04-04 22:00:45,640] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-04-04 22:00:45,640] {logging_mixin.py:104} INFO - [2021-04-04 22:00:45,640] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-04-04 22:00:45,646] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-04-04 22:00:45,656] {logging_mixin.py:104} INFO - [2021-04-04 22:00:45,656] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-04-04 22:00:45,666] {logging_mixin.py:104} INFO - [2021-04-04 22:00:45,666] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-04-03 00:00:00+00:00
+[2021-04-04 22:00:45,681] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py took 0.044 seconds
+[2021-04-04 22:01:16,623] {scheduler_job.py:182} INFO - Started process (PID=7926) to work on /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-04-04 22:01:16,624] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-04-04 22:01:16,624] {logging_mixin.py:104} INFO - [2021-04-04 22:01:16,624] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-04-04 22:01:16,634] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-04-04 22:01:16,645] {logging_mixin.py:104} INFO - [2021-04-04 22:01:16,645] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-04-04 22:01:16,656] {logging_mixin.py:104} INFO - [2021-04-04 22:01:16,656] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-04-03 00:00:00+00:00
+[2021-04-04 22:01:16,667] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py took 0.047 seconds
+[2021-04-04 22:32:18,701] {scheduler_job.py:182} INFO - Started process (PID=3528) to work on /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-04-04 22:32:18,705] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-04-04 22:32:18,705] {logging_mixin.py:104} INFO - [2021-04-04 22:32:18,705] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-04-04 22:32:18,717] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-04-04 22:32:18,733] {logging_mixin.py:104} INFO - [2021-04-04 22:32:18,733] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-04-04 22:32:18,742] {logging_mixin.py:104} INFO - [2021-04-04 22:32:18,742] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-04-03 00:00:00+00:00
+[2021-04-04 22:32:18,755] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py took 0.056 seconds
+[2021-04-04 22:32:49,602] {scheduler_job.py:182} INFO - Started process (PID=3555) to work on /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-04-04 22:32:49,603] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-04-04 22:32:49,603] {logging_mixin.py:104} INFO - [2021-04-04 22:32:49,603] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-04-04 22:32:49,609] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-04-04 22:32:49,617] {logging_mixin.py:104} INFO - [2021-04-04 22:32:49,617] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-04-04 22:32:49,626] {logging_mixin.py:104} INFO - [2021-04-04 22:32:49,626] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-04-03 00:00:00+00:00
+[2021-04-04 22:32:49,632] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py took 0.032 seconds
+[2021-04-04 22:33:20,404] {scheduler_job.py:182} INFO - Started process (PID=3584) to work on /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-04-04 22:33:20,404] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-04-04 22:33:20,405] {logging_mixin.py:104} INFO - [2021-04-04 22:33:20,405] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-04-04 22:33:20,411] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-04-04 22:33:20,421] {logging_mixin.py:104} INFO - [2021-04-04 22:33:20,421] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-04-04 22:33:20,429] {logging_mixin.py:104} INFO - [2021-04-04 22:33:20,429] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-04-03 00:00:00+00:00
+[2021-04-04 22:33:20,433] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py took 0.032 seconds
+[2021-04-04 22:33:51,246] {scheduler_job.py:182} INFO - Started process (PID=3611) to work on /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-04-04 22:33:51,249] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2021-04-04 22:33:51,249] {logging_mixin.py:104} INFO - [2021-04-04 22:33:51,249] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-04-04 22:33:51,255] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2021-04-04 22:33:51,268] {logging_mixin.py:104} INFO - [2021-04-04 22:33:51,268] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-04-04 22:33:51,279] {logging_mixin.py:104} INFO - [2021-04-04 22:33:51,279] {dag.py:2273} INFO - Setting next_dagrun for tutorial to 2021-04-03 00:00:00+00:00
+[2021-04-04 22:33:51,283] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py took 0.040 seconds

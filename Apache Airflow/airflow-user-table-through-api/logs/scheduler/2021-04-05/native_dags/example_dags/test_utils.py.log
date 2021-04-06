@@ -1,0 +1,49 @@
+[2021-04-04 22:00:47,579] {scheduler_job.py:182} INFO - Started process (PID=7710) to work on /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2021-04-04 22:00:47,579] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py for tasks to queue
+[2021-04-04 22:00:47,580] {logging_mixin.py:104} INFO - [2021-04-04 22:00:47,580] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2021-04-04 22:00:47,587] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['test_utils']) retrieved from /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2021-04-04 22:00:47,597] {logging_mixin.py:104} INFO - [2021-04-04 22:00:47,597] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-04-04 22:00:47,603] {logging_mixin.py:104} INFO - [2021-04-04 22:00:47,602] {dag.py:2273} INFO - Setting next_dagrun for test_utils to None
+[2021-04-04 22:00:47,616] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py took 0.040 seconds
+[2021-04-04 22:01:18,941] {scheduler_job.py:182} INFO - Started process (PID=7930) to work on /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2021-04-04 22:01:18,971] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py for tasks to queue
+[2021-04-04 22:01:18,980] {logging_mixin.py:104} INFO - [2021-04-04 22:01:18,980] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2021-04-04 22:01:19,004] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['test_utils']) retrieved from /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2021-04-04 22:01:19,025] {logging_mixin.py:104} INFO - [2021-04-04 22:01:19,025] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-04-04 22:01:19,045] {logging_mixin.py:104} INFO - [2021-04-04 22:01:19,045] {dag.py:2273} INFO - Setting next_dagrun for test_utils to None
+[2021-04-04 22:01:19,049] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py took 0.110 seconds
+[2021-04-04 22:31:56,559] {scheduler_job.py:182} INFO - Started process (PID=3494) to work on /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2021-04-04 22:31:56,562] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py for tasks to queue
+[2021-04-04 22:31:56,562] {logging_mixin.py:104} INFO - [2021-04-04 22:31:56,562] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2021-04-04 22:31:56,568] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['test_utils']) retrieved from /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2021-04-04 22:31:56,598] {logging_mixin.py:104} INFO - [2021-04-04 22:31:56,598] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-04-04 22:31:56,606] {logging_mixin.py:104} INFO - [2021-04-04 22:31:56,606] {dag.py:2273} INFO - Setting next_dagrun for test_utils to None
+[2021-04-04 22:31:56,610] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py took 0.052 seconds
+[2021-04-04 22:32:27,175] {scheduler_job.py:182} INFO - Started process (PID=3534) to work on /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2021-04-04 22:32:27,176] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py for tasks to queue
+[2021-04-04 22:32:27,176] {logging_mixin.py:104} INFO - [2021-04-04 22:32:27,176] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2021-04-04 22:32:27,182] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['test_utils']) retrieved from /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2021-04-04 22:32:27,190] {logging_mixin.py:104} INFO - [2021-04-04 22:32:27,190] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-04-04 22:32:27,197] {logging_mixin.py:104} INFO - [2021-04-04 22:32:27,197] {dag.py:2273} INFO - Setting next_dagrun for test_utils to None
+[2021-04-04 22:32:27,202] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py took 0.029 seconds
+[2021-04-04 22:32:58,065] {scheduler_job.py:182} INFO - Started process (PID=3562) to work on /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2021-04-04 22:32:58,066] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py for tasks to queue
+[2021-04-04 22:32:58,066] {logging_mixin.py:104} INFO - [2021-04-04 22:32:58,066] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2021-04-04 22:32:58,076] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['test_utils']) retrieved from /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2021-04-04 22:32:58,087] {logging_mixin.py:104} INFO - [2021-04-04 22:32:58,087] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-04-04 22:32:58,095] {logging_mixin.py:104} INFO - [2021-04-04 22:32:58,095] {dag.py:2273} INFO - Setting next_dagrun for test_utils to None
+[2021-04-04 22:32:58,105] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py took 0.042 seconds
+[2021-04-04 22:33:28,845] {scheduler_job.py:182} INFO - Started process (PID=3591) to work on /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2021-04-04 22:33:28,846] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py for tasks to queue
+[2021-04-04 22:33:28,847] {logging_mixin.py:104} INFO - [2021-04-04 22:33:28,847] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2021-04-04 22:33:28,856] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['test_utils']) retrieved from /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2021-04-04 22:33:28,867] {logging_mixin.py:104} INFO - [2021-04-04 22:33:28,867] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-04-04 22:33:28,873] {logging_mixin.py:104} INFO - [2021-04-04 22:33:28,873] {dag.py:2273} INFO - Setting next_dagrun for test_utils to None
+[2021-04-04 22:33:28,881] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py took 0.040 seconds
+[2021-04-04 22:33:59,698] {scheduler_job.py:182} INFO - Started process (PID=3618) to work on /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2021-04-04 22:33:59,706] {scheduler_job.py:629} INFO - Processing file /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py for tasks to queue
+[2021-04-04 22:33:59,707] {logging_mixin.py:104} INFO - [2021-04-04 22:33:59,707] {dagbag.py:448} INFO - Filling up the DagBag from /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2021-04-04 22:33:59,727] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['test_utils']) retrieved from /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2021-04-04 22:33:59,753] {logging_mixin.py:104} INFO - [2021-04-04 22:33:59,753] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-04-04 22:33:59,764] {logging_mixin.py:104} INFO - [2021-04-04 22:33:59,764] {dag.py:2273} INFO - Setting next_dagrun for test_utils to None
+[2021-04-04 22:33:59,779] {scheduler_job.py:190} INFO - Processing /home/prathamesh/PycharmProjects/airflow-project/venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py took 0.083 seconds
