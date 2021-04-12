@@ -4,8 +4,6 @@
 
 **This demonstrates the implementation of AWS CLI and other services like IAM, Amazon S3, comprehend and lambda.**
 
-![AWS](https://user-images.githubusercontent.com/59594174/109194191-32a5de00-7767-11eb-916e-827815f25b96.png)
-
 
 ![Services](https://user-images.githubusercontent.com/59594174/109194273-405b6380-7767-11eb-9d3b-2205df0addf6.png)
 
@@ -98,7 +96,6 @@ The **service.py** is the file we will be using. We can edit service.py with our
 
 `lambda.py deploy`
 
-**Lambda function successfully deployed.**
 
 
 
