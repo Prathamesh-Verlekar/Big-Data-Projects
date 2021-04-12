@@ -16,15 +16,15 @@
 
 3. Configuring AWS on your system
 
-4. Getting started with **IAM ( Identity Access Management )**
+4. Getting started with IAM ( Identity Access Management )
 
 5. Creating a virtual environment
 
-6. Installing all the required packages in this virtual env - `first-lambda`
+6. Installing all the required packages in this virtual env - `first-lambda-function`
 
-**Faker:**  A python package to generate fake data
+**Faker:**  Faker is a Python package that generates fake data for you. Whether you need to bootstrap your database, create good-looking XML documents, fill-in your persistence to stress test it, or anonymize data taken from a production service.
 
-**Boto3:** Boto3 is a Amazon Web Services (AWS) Software Development Kit (SDK) for Python which allows Python developers to write software that makes use of services like Amazon S3 and Amazon EC2
+**Boto3:** Boto3 is the Amazon Web Services (AWS) Software Development Kit (SDK) for Python, which allows Python developers to write software that makes use of services like Amazon S3 and Amazon EC2.
 
 ```
 - pip3 install Faker
@@ -51,12 +51,12 @@
 
 - `s3_upload.py` - Python script to generate some fake data using Faker and uploadthe same to your S3 Bucket 
 - `s3_download.py` - Downloading the file from S3 to your local environemnt 
-- `comprehend_demo.py` - Using AWS Comprehend to implement sentiment analysis
+- `comprehend_function.py` - Using AWS Comprehend to implement sentiment analysis
 
 
 ## Lambda-serverless-py
 
-**AWS Lambda** is a serverless compute service that runs your code in response to events. It lets you run code without provisioning or managing servers. Lambda runs your code only when needed and scales automatically, from a few requests per day to thousands per second. 
+**AWS Lambda** is a serverless compute service that lets you run code without provisioning or managing servers, creating workload-aware cluster scaling logic, maintaining event integrations, or managing runtimes. With Lambda, you can run code for virtually any type of application or backend service - all with zero administration. Just upload your code as a ZIP file or container image, and Lambda automatically and precisely allocates compute execution power and runs your code based on the incoming request or event, for any scale of traffic.
 
 
 ![lambda](https://user-images.githubusercontent.com/59594174/109194337-4fdaac80-7767-11eb-8598-060c8dd09af3.png)
