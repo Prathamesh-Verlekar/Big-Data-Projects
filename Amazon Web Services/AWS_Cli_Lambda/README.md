@@ -1,4 +1,4 @@
-Getting started with AWS + Lambda
+## Getting started with AWS + Lambda
 
 ## About
 
